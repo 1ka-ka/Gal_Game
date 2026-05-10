@@ -1271,7 +1271,7 @@
           "Expression": "calm"
         }
       ],
-      "Next": "afternoon_01"
+      "Next": "mysterious_intro_01"
     },
     "rooftop_01": {
       "Id": "rooftop_01",
@@ -2281,7 +2281,7 @@
           "Expression": "smile"
         }
       ],
-      "Next": ""
+      "Next": "rainy_day_01"
     },
     "ending_student_council": {
       "Id": "ending_student_council",
@@ -2381,7 +2381,7 @@
           "Expression": "smile"
         }
       ],
-      "Next": ""
+      "Next": "rainy_day_01"
     },
     "ending_art_music": {
       "Id": "ending_art_music",
@@ -2396,7 +2396,7 @@
           "Expression": "smile"
         }
       ],
-      "Next": ""
+      "Next": "concert_intro_01"
     },
     "ending_art": {
       "Id": "ending_art",
@@ -2416,7 +2416,7 @@
           "Expression": "smile"
         }
       ],
-      "Next": ""
+      "Next": "teacher_intro_01"
     },
     "ending_quiet": {
       "Id": "ending_quiet",
@@ -2431,7 +2431,7 @@
           "Expression": "calm"
         }
       ],
-      "Next": ""
+      "Next": "beach_intro_01"
     },
     "rainy_day_01": {
       "Id": "rainy_day_01",
@@ -4101,37 +4101,6 @@
       ],
       "Next": "teacher_choice_01"
     },
-    "choice_teacher": {
-      "Id": "choice_teacher",
-      "Type": "Choice",
-      "Speaker": "",
-      "Text": "陈老师问你对美术的看法，你回答……",
-      "Background": "bg_classroom",
-      "Characters": [
-        {
-          "Id": "protagonist",
-          "Position": "Center",
-          "Expression": "thinking"
-        },
-        {
-          "Id": "teacher_chen",
-          "Position": "Right",
-          "Expression": "smile"
-        }
-      ],
-      "Choices": [
-        {
-          "Id": "teacher_art_love",
-          "Text": "我觉得美术是一种表达方式",
-          "Next": "teacher_art_love_01"
-        },
-        {
-          "Id": "teacher_art_fun",
-          "Text": "我觉得画画很有趣",
-          "Next": "teacher_art_fun_01"
-        }
-      ]
-    },
     "teacher_art_love_01": {
       "Id": "teacher_art_love_01",
       "Type": "Dialogue",
@@ -4435,7 +4404,7 @@
           "Expression": "smile"
         }
       ],
-      "Next": "ending_art_contest"
+      "Next": "hospital_intro_01"
     },
     "mysterious_intro_01": {
       "Id": "mysterious_intro_01",
@@ -4520,37 +4489,6 @@
         }
       ],
       "Next": "mysterious_choice_01"
-    },
-    "choice_mysterious": {
-      "Id": "choice_mysterious",
-      "Type": "Choice",
-      "Speaker": "",
-      "Text": "面对这个神秘的女孩，你……",
-      "Background": "bg_city_street",
-      "Characters": [
-        {
-          "Id": "protagonist",
-          "Position": "Left",
-          "Expression": "thinking"
-        },
-        {
-          "Id": "mysterious_girl",
-          "Position": "Right",
-          "Expression": "calm"
-        }
-      ],
-      "Choices": [
-        {
-          "Id": "ask_who",
-          "Text": "问她到底是谁",
-          "Next": "ask_who_01"
-        },
-        {
-          "Id": "listen_her",
-          "Text": "先听听她说什么",
-          "Next": "listen_her_01"
-        }
-      ]
     },
     "ask_who_01": {
       "Id": "ask_who_01",
