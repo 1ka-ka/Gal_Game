@@ -1,13 +1,13 @@
 {
   "StoryId": "main_story",
-  "Title": "\u6668\u66e6\u4e4b\u7ea6",
+  "Title": "晨曦之约",
   "FirstNodeId": "prologue_01",
   "Nodes": {
     "prologue_01": {
       "Id": "prologue_01",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u6e05\u6668\u7684\u9633\u5149\u900f\u8fc7\u7a97\u5e18\u7684\u7f1d\u9699\uff0c\u5728\u5730\u677f\u4e0a\u6295\u4e0b\u7ec6\u957f\u7684\u5149\u5f71\u3002\u65b0\u7684\u4e00\u5929\uff0c\u65b0\u7684\u5f00\u59cb\u2026\u2026",
+      "Text": "清晨的阳光透过窗帘的缝隙，在地板上投下细长的光影。新的一天，新的开始……",
       "Background": "bg_room_morning",
       "Characters": [],
       "Next": "prologue_02"
@@ -15,22 +15,30 @@
     "prologue_02": {
       "Id": "prologue_02",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u53c8\u662f\u65b0\u7684\u4e00\u5929\u554a\u2026\u2026\u4eca\u5929\u6709\u4ec0\u4e48\u5b89\u6392\u6765\u7740\uff1f",
+      "Speaker": "主角",
+      "Text": "又是新的一天啊……今天有什么安排来着？",
       "Background": "bg_room_morning",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "normal"
+        }
       ],
       "Next": "prologue_03"
     },
     "prologue_03": {
       "Id": "prologue_03",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u5bf9\u4e86\uff0c\u4eca\u5929\u662f\u8f6c\u5b66\u540e\u7b2c\u4e00\u5929\u53bb\u65b0\u5b66\u6821\u3002\u5f97\u8d76\u7d27\u51c6\u5907\u624d\u884c\u3002",
+      "Speaker": "主角",
+      "Text": "对了，今天是转学后第一天去新学校。得赶紧准备才行。",
       "Background": "bg_room_morning",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "thinking" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
       ],
       "Next": "prologue_04"
     },
@@ -38,10 +46,14 @@
       "Id": "prologue_04",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u6574\u7406\u597d\u4e66\u5305\uff0c\u6362\u4e0a\u65b0\u6821\u670d\uff0c\u5728\u955c\u5b50\u524d\u7167\u4e86\u7167\u3002\u867d\u7136\u6709\u4e9b\u7d27\u5f20\uff0c\u4f46\u66f4\u591a\u7684\u662f\u671f\u5f85\u3002",
+      "Text": "整理好书包，换上新校服，在镜子前照了照。虽然有些紧张，但更多的是期待。",
       "Background": "bg_room_morning",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "determined" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "determined"
+        }
       ],
       "Next": "choice_morning_01"
     },
@@ -49,25 +61,45 @@
       "Id": "choice_morning_01",
       "Type": "Choice",
       "Speaker": "",
-      "Text": "\u8be5\u600e\u4e48\u53bb\u5b66\u6821\u5462\uff1f",
+      "Text": "该怎么去学校呢？",
       "Background": "bg_room_morning",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "thinking" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
       ],
       "Choices": [
-        { "Id": "walk_school", "Text": "\u6b65\u884c\u53bb\u5b66\u6821\uff0c\u987a\u4fbf\u719f\u6089\u73af\u5883", "Next": "route_walk_01" },
-        { "Id": "bus_school", "Text": "\u5750\u516c\u4ea4\u8f66\uff0c\u6bd4\u8f83\u5feb", "Next": "route_bus_01" },
-        { "Id": "bike_school", "Text": "\u9a91\u81ea\u884c\u8f66\uff0c\u81ea\u7531\u81ea\u5728", "Next": "route_bike_01" }
+        {
+          "Id": "walk_school",
+          "Text": "步行去学校，顺便熟悉环境",
+          "Next": "route_walk_01"
+        },
+        {
+          "Id": "bus_school",
+          "Text": "坐公交车，比较快",
+          "Next": "route_bus_01"
+        },
+        {
+          "Id": "bike_school",
+          "Text": "骑自行车，自由自在",
+          "Next": "route_bike_01"
+        }
       ]
     },
     "route_walk_01": {
       "Id": "route_walk_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u8fd8\u662f\u8d70\u7740\u53bb\u5427\uff0c\u6b63\u597d\u53ef\u4ee5\u770b\u770b\u8fd9\u9644\u8fd1\u6709\u4ec0\u4e48\u3002",
+      "Speaker": "主角",
+      "Text": "还是走着去吧，正好可以看看这附近有什么。",
       "Background": "bg_street_morning",
       "Characters": [
-        { "Id": "protagonist", "Position": "CenterLeft", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "CenterLeft",
+          "Expression": "normal"
+        }
       ],
       "Next": "route_walk_02"
     },
@@ -75,7 +107,7 @@
       "Id": "route_walk_02",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u6e05\u6668\u7684\u8857\u9053\u4e0a\u884c\u4eba\u8fd8\u4e0d\u591a\uff0c\u7a7a\u6c14\u4e2d\u5f25\u6f2b\u7740\u65e9\u9910\u5e97\u7684\u9999\u6c14\u3002\u8fdc\u5904\u4f20\u6765\u7535\u8f66\u7684\u94c3\u58f0\uff0c\u4e00\u5207\u770b\u8d77\u6765\u5b81\u9759\u800c\u7f8e\u597d\u3002",
+      "Text": "清晨的街道上行人还不多，空气中弥漫着早餐店的香气。远处传来电车的铃声，一切看起来宁静而美好。",
       "Background": "bg_street_morning",
       "Characters": [],
       "Next": "route_walk_03"
@@ -84,59 +116,99 @@
       "Id": "route_walk_03",
       "Type": "Dialogue",
       "Speaker": "???",
-      "Text": "\u90a3\u4e2a\u2026\u2026\u8bf7\u95ee\uff0c\u53bb\u661f\u6d77\u9ad8\u4e2d\u600e\u4e48\u8d70\uff1f",
+      "Text": "那个……请问，去星海高中怎么走？",
       "Background": "bg_street_morning",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "route_walk_04"
     },
     "route_walk_04": {
       "Id": "route_walk_04",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u554a\uff0c\u6211\u4e5f\u6b63\u8981\u53bb\u90a3\u91cc\u3002\u4e00\u8d77\u8d70\u5427\u3002",
+      "Speaker": "主角",
+      "Text": "啊，我也正要去那里。一起走吧。",
       "Background": "bg_street_morning",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "route_walk_05"
     },
     "route_walk_05": {
       "Id": "route_walk_05",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u8c22\u8c22\u4f60\uff01\u6211\u53eb\u6797\u60a6\uff0c\u662f\u4eca\u5e74\u521a\u8f6c\u6765\u7684\u3002\u4f60\u5462\uff1f",
+      "Speaker": "林悦",
+      "Text": "谢谢你！我叫林悦，是今年刚转来的。你呢？",
       "Background": "bg_street_morning",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "route_walk_06"
     },
     "route_walk_06": {
       "Id": "route_walk_06",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u6211\u53eb\u2026\u2026\u55ef\uff0c\u597d\u5de7\uff0c\u6211\u4eec\u540c\u4e00\u5929\u8f6c\u5b66\u5462\u3002",
+      "Speaker": "主角",
+      "Text": "我叫……嗯，好巧，我们同一天转学呢。",
       "Background": "bg_street_morning",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "route_walk_07"
     },
     "route_walk_07": {
       "Id": "route_walk_07",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u771f\u7684\u5417\uff1f\u90a3\u6211\u4eec\u4ee5\u540e\u53ef\u4ee5\u4e92\u76f8\u5e2e\u52a9\u4e86\uff01\u8bf4\u4e0d\u5b9a\u8fd8\u80fd\u5206\u5230\u540c\u4e00\u4e2a\u73ed\u5462\u3002",
+      "Speaker": "林悦",
+      "Text": "真的吗？那我们以后可以互相帮助了！说不定还能分到同一个班呢。",
       "Background": "bg_street_morning",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "route_walk_08"
     },
@@ -144,7 +216,7 @@
       "Id": "route_walk_08",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u4e24\u4eba\u6cbf\u7740\u6797\u836b\u9053\u8def\u5411\u5b66\u6821\u8d70\u53bb\u3002\u8fdc\u5904\u7684\u6d77\u9762\u5728\u9633\u5149\u4e0b\u95ea\u70c1\uff0c\u5fae\u98ce\u5e26\u6765\u6d77\u6c34\u7684\u6c14\u606f\u3002",
+      "Text": "两人沿着林荫道路向学校走去。远处的海面在阳光下闪烁，微风带来海水的气息。",
       "Background": "bg_seaside_road",
       "Characters": [],
       "Next": "school_arrive_01"
@@ -152,11 +224,15 @@
     "route_bus_01": {
       "Id": "route_bus_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u8fd8\u662f\u5750\u516c\u4ea4\u5427\uff0c\u7b2c\u4e00\u5929\u53ef\u4e0d\u80fd\u8fdf\u5230\u3002",
+      "Speaker": "主角",
+      "Text": "还是坐公交吧，第一天可不能迟到。",
       "Background": "bg_bus",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "normal"
+        }
       ],
       "Next": "route_bus_02"
     },
@@ -164,7 +240,7 @@
       "Id": "route_bus_02",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u516c\u4ea4\u8f66\u7f13\u7f13\u9a76\u8fc7\u57ce\u5e02\u7684\u8857\u9053\uff0c\u7a97\u5916\u7684\u666f\u8272\u4e0d\u65ad\u53d8\u6362\u3002\u9ad8\u697c\u3001\u516c\u56ed\u3001\u6cb3\u6d41\u2026\u2026\u8fd9\u5ea7\u57ce\u5e02\u6bd4\u60f3\u8c61\u4e2d\u66f4\u5927\u3002",
+      "Text": "公交车缓缓驶过城市的街道，窗外的景色不断变换。高楼、公园、河流……这座城市比想象中更大。",
       "Background": "bg_bus",
       "Characters": [],
       "Next": "route_bus_03"
@@ -173,7 +249,7 @@
       "Id": "route_bus_03",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u8fd9\u65f6\uff0c\u4e00\u4e2a\u5750\u5728\u524d\u6392\u7684\u5973\u5b69\u8f6c\u8fc7\u5934\u6765\uff0c\u9633\u5149\u7167\u5728\u5979\u91d1\u8272\u7684\u5934\u53d1\u4e0a\uff0c\u95ea\u95ea\u53d1\u4eae\u3002",
+      "Text": "这时，一个坐在前排的女孩转过头来，阳光照在她金色的头发上，闪闪发亮。",
       "Background": "bg_bus",
       "Characters": [],
       "Next": "route_bus_04"
@@ -181,59 +257,95 @@
     "route_bus_04": {
       "Id": "route_bus_04",
       "Type": "Dialogue",
-      "Speaker": "\u82cf\u7476",
-      "Text": "\u55e8\uff01\u4f60\u4e5f\u662f\u53bb\u661f\u6d77\u9ad8\u4e2d\u7684\u5417\uff1f\u8fd9\u8eab\u6821\u670d\u2026\u2026\u662f\u65b0\u8f6c\u6765\u7684\u5427\uff1f",
+      "Speaker": "苏瑶",
+      "Text": "嗨！你也是去星海高中的吗？这身校服……是新转来的吧？",
       "Background": "bg_bus",
       "Characters": [
-        { "Id": "protagonist", "Position": "Right", "Expression": "surprised" },
-        { "Id": "su_yao", "Position": "Left", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Right",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Left",
+          "Expression": "smile"
+        }
       ],
       "Next": "route_bus_05"
     },
     "route_bus_05": {
       "Id": "route_bus_05",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u554a\u2026\u2026\u662f\u7684\u3002\u4f60\u600e\u4e48\u77e5\u9053\uff1f",
+      "Speaker": "主角",
+      "Text": "啊……是的。你怎么知道？",
       "Background": "bg_bus",
       "Characters": [
-        { "Id": "protagonist", "Position": "Right", "Expression": "surprised" },
-        { "Id": "su_yao", "Position": "Left", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Right",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Left",
+          "Expression": "smile"
+        }
       ],
       "Next": "route_bus_06"
     },
     "route_bus_06": {
       "Id": "route_bus_06",
       "Type": "Dialogue",
-      "Speaker": "\u82cf\u7476",
-      "Text": "\u6211\u662f\u5b66\u751f\u4f1a\u4e3b\u5e2d\u82cf\u7476\u3002\u6b22\u8fce\u4f60\u6765\u661f\u6d77\uff01\u4eca\u5929\u62a5\u5230\u540e\u8bb0\u5f97\u6765\u5b66\u751f\u4f1a\u529e\u516c\u5ba4\u627e\u6211\u54e6\u3002",
+      "Speaker": "苏瑶",
+      "Text": "我是学生会主席苏瑶。欢迎你来星海！今天报到后记得来学生会办公室找我哦。",
       "Background": "bg_bus",
       "Characters": [
-        { "Id": "protagonist", "Position": "Right", "Expression": "normal" },
-        { "Id": "su_yao", "Position": "Left", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Right",
+          "Expression": "normal"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Left",
+          "Expression": "smile"
+        }
       ],
       "Next": "route_bus_07"
     },
     "route_bus_07": {
       "Id": "route_bus_07",
       "Type": "Dialogue",
-      "Speaker": "\u82cf\u7476",
-      "Text": "\u5bf9\u4e86\uff0c\u4e0b\u5468\u5b66\u6821\u8981\u4e3e\u529e\u6587\u5316\u8282\uff0c\u5982\u679c\u4f60\u6709\u5174\u8da3\u7684\u8bdd\uff0c\u53ef\u4ee5\u6765\u5e2e\u5fd9\u54e6\uff01",
+      "Speaker": "苏瑶",
+      "Text": "对了，下周学校要举办文化节，如果你有兴趣的话，可以来帮忙哦！",
       "Background": "bg_bus",
       "Characters": [
-        { "Id": "protagonist", "Position": "Right", "Expression": "normal" },
-        { "Id": "su_yao", "Position": "Left", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Right",
+          "Expression": "normal"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Left",
+          "Expression": "smile"
+        }
       ],
       "Next": "school_arrive_01"
     },
     "route_bike_01": {
       "Id": "route_bike_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u9a91\u81ea\u884c\u8f66\u53bb\u5427\uff0c\u81ea\u7531\u81ea\u5728\u7684\u611f\u89c9\u591a\u597d\u3002",
+      "Speaker": "主角",
+      "Text": "骑自行车去吧，自由自在的感觉多好。",
       "Background": "bg_street_morning",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
       ],
       "Next": "route_bike_02"
     },
@@ -241,7 +353,7 @@
       "Id": "route_bike_02",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u6d77\u98ce\u62c2\u8fc7\u8138\u988a\uff0c\u81ea\u884c\u8f66\u5728\u6cbf\u6d77\u516c\u8def\u4e0a\u98de\u9a70\u3002\u9633\u5149\u6d12\u5728\u6d77\u9762\u4e0a\uff0c\u6ce2\u5149\u7c9c\u7c9c\uff0c\u7f8e\u4e0d\u80dc\u6536\u3002",
+      "Text": "海风拂过脸颊，自行车在沿海公路上飞驰。阳光洒在海面上，波光粜粜，美不胜收。",
       "Background": "bg_seaside_road",
       "Characters": [],
       "Next": "route_bike_03"
@@ -249,11 +361,15 @@
     "route_bike_03": {
       "Id": "route_bike_03",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u8fd9\u6761\u8def\u771f\u7f8e\u2026\u2026\u4ee5\u540e\u6bcf\u5929\u90fd\u8981\u9a91\u8fd9\u6761\u8def\uff01\u2026\u2026\u554a\uff0c\u4e0d\u597d\uff0c\u8981\u8fdf\u5230\u4e86\uff01",
+      "Speaker": "主角",
+      "Text": "这条路真美……以后每天都要骑这条路！……啊，不好，要迟到了！",
       "Background": "bg_seaside_road",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
       ],
       "Next": "route_bike_04"
     },
@@ -261,7 +377,7 @@
       "Id": "route_bike_04",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u8d76\u7d27\u52a0\u901f\u8e6d\u8f66\uff0c\u7ec8\u4e8e\u5728\u6700\u540e\u4e00\u523b\u8d76\u5230\u4e86\u5b66\u6821\u95e8\u53e3\u3002\u4e00\u4e2a\u9ad8\u5927\u7684\u7537\u751f\u6b63\u5728\u90a3\u91cc\u7b49\u7740\u3002",
+      "Text": "赶紧加速蹭车，终于在最后一刻赶到了学校门口。一个高大的男生正在那里等着。",
       "Background": "bg_school_gate",
       "Characters": [],
       "Next": "route_bike_05"
@@ -269,24 +385,40 @@
     "route_bike_05": {
       "Id": "route_bike_05",
       "Type": "Dialogue",
-      "Speaker": "\u5f20\u6d69",
-      "Text": "\u54df\uff01\u65b0\u6765\u7684\uff1f\u81ea\u884c\u8f66\u9a91\u5f97\u633a\u5feb\u554a\uff01\u6211\u662f\u5f20\u6d69\uff0c\u4ee5\u540e\u591a\u591a\u5173\u7167\uff01",
+      "Speaker": "张浩",
+      "Text": "哟！新来的？自行车骑得挺快啊！我是张浩，以后多多关照！",
       "Background": "bg_school_gate",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "route_bike_06"
     },
     "route_bike_06": {
       "Id": "route_bike_06",
       "Type": "Dialogue",
-      "Speaker": "\u5f20\u6d69",
-      "Text": "\u6211\u662f\u7bee\u7403\u793e\u7684\u526f\u793e\u957f\uff0c\u4f60\u8981\u662f\u6709\u5174\u8da3\u7684\u8bdd\uff0c\u653e\u5b66\u540e\u53ef\u4ee5\u6765\u627e\u6211\u554a\uff01",
+      "Speaker": "张浩",
+      "Text": "我是篮球社的副社长，你要是有兴趣的话，放学后可以来找我啊！",
       "Background": "bg_school_gate",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "school_arrive_01"
     },
@@ -294,7 +426,7 @@
       "Id": "school_arrive_01",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u661f\u6d77\u9ad8\u4e2d\u2014\u2014\u4e00\u6240\u5750\u843d\u5728\u6d77\u8fb9\u7684\u5b66\u6821\uff0c\u636e\u8bf4\u8fd9\u91cc\u7684\u6bcf\u4e00\u4e2a\u5b66\u751f\u90fd\u6709\u5c5e\u4e8e\u81ea\u5df1\u7684\u6545\u4e8b\u3002",
+      "Text": "星海高中——一所坐落在海边的学校，据说这里的每一个学生都有属于自己的故事。",
       "Background": "bg_school_gate",
       "Characters": [],
       "Next": "school_arrive_02"
@@ -302,11 +434,15 @@
     "school_arrive_02": {
       "Id": "school_arrive_02",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u4ece\u4eca\u5929\u8d77\uff0c\u8fd9\u91cc\u5c31\u662f\u6211\u7684\u5b66\u6821\u4e86\u3002\u5e0c\u671b\u80fd\u4ea4\u5230\u670b\u53cb\u5427\u3002",
+      "Speaker": "主角",
+      "Text": "从今天起，这里就是我的学校了。希望能交到朋友吧。",
       "Background": "bg_school_gate",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "determined" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "determined"
+        }
       ],
       "Next": "school_arrive_03"
     },
@@ -314,7 +450,7 @@
       "Id": "school_arrive_03",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u8d70\u8fdb\u6821\u95e8\uff0c\u6821\u56ed\u91cc\u5230\u5904\u662f\u7eff\u6811\u548c\u82b1\u575b\u3002\u8fdc\u5904\u53ef\u4ee5\u770b\u5230\u4e00\u5ea7\u53e4\u8001\u7684\u949f\u5854\uff0c\u636e\u8bf4\u662f\u5b66\u6821\u7684\u6807\u5fd7\u6027\u5efa\u7b51\u3002",
+      "Text": "走进校门，校园里到处是绿树和花坛。远处可以看到一座古老的钟塔，据说是学校的标志性建筑。",
       "Background": "bg_school_garden",
       "Characters": [],
       "Next": "choice_school_01"
@@ -323,23 +459,43 @@
       "Id": "choice_school_01",
       "Type": "Choice",
       "Speaker": "",
-      "Text": "\u8d70\u8fdb\u5b66\u6821\u540e\uff0c\u9996\u5148\u8981\u2026\u2026",
+      "Text": "走进学校后，首先要……",
       "Background": "bg_school_garden",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "thinking" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
       ],
       "Choices": [
-        { "Id": "go_classroom", "Text": "\u5148\u53bb\u6559\u5ba4\u62a5\u5230", "Next": "classroom_01" },
-        { "Id": "go_rooftop", "Text": "\u5148\u53bb\u5929\u53f0\u770b\u770b\u98ce\u666f", "Next": "rooftop_01" },
-        { "Id": "go_library", "Text": "\u53bb\u56fe\u4e66\u9986\u8f6c\u8f6c", "Next": "library_01" },
-        { "Id": "go_student_council", "Text": "\u53bb\u5b66\u751f\u4f1a\u529e\u516c\u5ba4", "Next": "student_council_01" }
+        {
+          "Id": "go_classroom",
+          "Text": "先去教室报到",
+          "Next": "classroom_01"
+        },
+        {
+          "Id": "go_rooftop",
+          "Text": "先去天台看看风景",
+          "Next": "rooftop_01"
+        },
+        {
+          "Id": "go_library",
+          "Text": "去图书馆转转",
+          "Next": "library_01"
+        },
+        {
+          "Id": "go_student_council",
+          "Text": "去学生会办公室",
+          "Next": "student_council_01"
+        }
       ]
     },
     "classroom_01": {
       "Id": "classroom_01",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u6559\u5ba4\u91cc\u5df2\u7ecf\u6709\u4e0d\u5c11\u4eba\u4e86\u3002\u5f53\u4e3b\u89d2\u8d70\u8fdb\u95e8\u7684\u90a3\u4e00\u523b\uff0c\u6240\u6709\u4eba\u7684\u76ee\u5149\u90fd\u6295\u4e86\u8fc7\u6765\u3002",
+      "Text": "教室里已经有不少人了。当主角走进门的那一刻，所有人的目光都投了过来。",
       "Background": "bg_classroom",
       "Characters": [],
       "Next": "classroom_02"
@@ -347,22 +503,30 @@
     "classroom_02": {
       "Id": "classroom_02",
       "Type": "Dialogue",
-      "Speaker": "\u8001\u5e08",
-      "Text": "\u6765\uff0c\u7ed9\u5927\u5bb6\u505a\u4e2a\u81ea\u6211\u4ecb\u7ecd\u5427\u3002",
+      "Speaker": "老师",
+      "Text": "来，给大家做个自我介绍吧。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "nervous" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "nervous"
+        }
       ],
       "Next": "classroom_03"
     },
     "classroom_03": {
       "Id": "classroom_03",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u5927\u5bb6\u597d\uff0c\u6211\u662f\u521a\u8f6c\u6765\u7684\u2026\u2026\u8bf7\u591a\u591a\u5173\u7167\u3002",
+      "Speaker": "主角",
+      "Text": "大家好，我是刚转来的……请多多关照。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "nervous" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "nervous"
+        }
       ],
       "Next": "classroom_04"
     },
@@ -370,7 +534,7 @@
       "Id": "classroom_04",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u6559\u5ba4\u91cc\u54cd\u8d77\u4e86\u7a00\u7a00\u843d\u843d\u7684\u638c\u58f0\u3002\u867d\u7136\u6709\u4e9b\u7d27\u5f20\uff0c\u4f46\u603b\u7b97\u662f\u8fc8\u51fa\u4e86\u7b2c\u4e00\u6b65\u3002",
+      "Text": "教室里响起了稀稀落落的掌声。虽然有些紧张，但总算是迈出了第一步。",
       "Background": "bg_classroom",
       "Characters": [],
       "Next": "classroom_05"
@@ -378,11 +542,15 @@
     "classroom_05": {
       "Id": "classroom_05",
       "Type": "Dialogue",
-      "Speaker": "\u8001\u5e08",
-      "Text": "\u597d\u4e86\uff0c\u4f60\u5c31\u5750\u5728\u2026\u2026\u55ef\uff0c\u9760\u7a97\u90a3\u4e2a\u4f4d\u7f6e\u5427\u3002",
+      "Speaker": "老师",
+      "Text": "好了，你就坐在……嗯，靠窗那个位置吧。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "normal"
+        }
       ],
       "Next": "classroom_06"
     },
@@ -390,7 +558,7 @@
       "Id": "classroom_06",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u8d70\u5230\u5ea7\u4f4d\u65c1\uff0c\u53d1\u73b0\u65c1\u8fb9\u5750\u7740\u4e00\u4e2a\u6587\u9759\u7684\u5973\u751f\uff0c\u6b63\u5fae\u7b11\u7740\u770b\u7740\u81ea\u5df1\u3002",
+      "Text": "走到座位旁，发现旁边坐着一个文静的女生，正微笑着看着自己。",
       "Background": "bg_classroom",
       "Characters": [],
       "Next": "classroom_07"
@@ -398,36 +566,60 @@
     "classroom_07": {
       "Id": "classroom_07",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u597d\u5de7\u554a\uff0c\u6211\u4eec\u53c8\u89c1\u9762\u4e86\uff01\u539f\u6765\u6211\u4eec\u662f\u540c\u73ed\u540c\u5b66\u3002",
+      "Speaker": "林悦",
+      "Text": "好巧啊，我们又见面了！原来我们是同班同学。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "classroom_08"
     },
     "classroom_08": {
       "Id": "classroom_08",
       "Type": "Dialogue",
-      "Speaker": "\u5218\u6885",
-      "Text": "\u554a\uff0c\u65b0\u540c\u5b66\uff01\u6211\u662f\u73ed\u7ea7\u4ee3\u8868\u5218\u6885\uff0c\u6709\u4ec0\u4e48\u4e0d\u61c2\u7684\u53ef\u4ee5\u968f\u65f6\u95ee\u6211\u54e6\uff01",
+      "Speaker": "刘梅",
+      "Text": "啊，新同学！我是班级代表刘梅，有什么不懂的可以随时问我哦！",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "surprised" },
-        { "Id": "liu_mei", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "classroom_09"
     },
     "classroom_09": {
       "Id": "classroom_09",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u8c22\u8c22\uff01\u5927\u5bb6\u90fd\u5f88\u53cb\u5584\u5462\u3002",
+      "Speaker": "主角",
+      "Text": "谢谢！大家都很友善呢。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "smile" },
-        { "Id": "liu_mei", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "choice_class_01"
     },
@@ -435,27 +627,55 @@
       "Id": "choice_class_01",
       "Type": "Choice",
       "Speaker": "",
-      "Text": "\u4e0b\u8bfe\u540e\u8981\u505a\u4ec0\u4e48\uff1f",
+      "Text": "下课后要做什么？",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Choices": [
-        { "Id": "talk_lin_yue", "Text": "\u548c\u6797\u60a6\u804a\u5929", "Next": "talk_lin_yue_01" },
-        { "Id": "explore_school", "Text": "\u72ec\u81ea\u53bb\u63a2\u7d22\u6821\u56ed", "Next": "explore_01" },
-        { "Id": "go_cafeteria", "Text": "\u8ddf\u5218\u6885\u53bb\u98df\u5802", "Next": "cafeteria_01" }
+        {
+          "Id": "talk_lin_yue",
+          "Text": "和林悦聊天",
+          "Next": "talk_lin_yue_01"
+        },
+        {
+          "Id": "explore_school",
+          "Text": "独自去探索校园",
+          "Next": "explore_01"
+        },
+        {
+          "Id": "go_cafeteria",
+          "Text": "跟刘梅去食堂",
+          "Next": "cafeteria_01"
+        }
       ]
     },
     "cafeteria_01": {
       "Id": "cafeteria_01",
       "Type": "Dialogue",
-      "Speaker": "\u5218\u6885",
-      "Text": "\u8d70\u5427\uff0c\u6211\u5e26\u4f60\u53bb\u98df\u5802\uff01\u90a3\u91cc\u7684\u725b\u8089\u996d\u53ef\u662f\u6709\u540d\u7684\u597d\u5403\u3002",
+      "Speaker": "刘梅",
+      "Text": "走吧，我带你去食堂！那里的牛肉饭可是有名的好吃。",
       "Background": "bg_school_corridor",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "liu_mei", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "cafeteria_02"
     },
@@ -463,7 +683,7 @@
       "Id": "cafeteria_02",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u98df\u5802\u91cc\u7076\u70df\u56db\u8d77\uff0c\u5404\u79cd\u9999\u6c14\u6df7\u5408\u5728\u4e00\u8d77\u3002\u5b66\u751f\u4eec\u4e09\u4e09\u4e24\u4e24\u5730\u56f4\u5750\u5728\u684c\u5b50\u65c1\uff0c\u7b11\u58f0\u4e0d\u65ad\u3002",
+      "Text": "食堂里灶烟四起，各种香气混合在一起。学生们三三两两地围坐在桌子旁，笑声不断。",
       "Background": "bg_cafeteria",
       "Characters": [],
       "Next": "cafeteria_03"
@@ -471,12 +691,20 @@
     "cafeteria_03": {
       "Id": "cafeteria_03",
       "Type": "Dialogue",
-      "Speaker": "\u5218\u6885",
-      "Text": "\u8fd9\u91cc\u5c31\u662f\u6211\u4eec\u7684\u98df\u5802\u3002\u6bcf\u5929\u4e2d\u5348\u8fd9\u91cc\u90fd\u5f88\u70ed\u95f9\uff0c\u4e0d\u8fc7\u98df\u7269\u8fd8\u662f\u5f88\u597d\u5403\u7684\u3002",
+      "Speaker": "刘梅",
+      "Text": "这里就是我们的食堂。每天中午这里都很热闹，不过食物还是很好吃的。",
       "Background": "bg_cafeteria",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "liu_mei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "cafeteria_04"
     },
@@ -484,36 +712,64 @@
       "Id": "cafeteria_04",
       "Type": "Dialogue",
       "Speaker": "???",
-      "Text": "\u2026\u2026\u8fd9\u4e2a\u4f4d\u7f6e\u6709\u4eba\u5417\uff1f",
+      "Text": "……这个位置有人吗？",
       "Background": "bg_cafeteria",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "cafeteria_05"
     },
     "cafeteria_05": {
       "Id": "cafeteria_05",
       "Type": "Dialogue",
-      "Speaker": "\u5218\u6885",
-      "Text": "\u554a\uff0c\u9648\u4f1f\uff01\u4f60\u4e5f\u6765\u5403\u996d\u554a\u3002\u4ed6\u662f\u7f8e\u672f\u793e\u7684\u9648\u4f1f\uff0c\u867d\u7136\u770b\u8d77\u6765\u5f88\u51b7\u6de1\uff0c\u4f46\u5176\u5b9e\u4eba\u5f88\u597d\u7684\u3002",
+      "Speaker": "刘梅",
+      "Text": "啊，陈伟！你也来吃饭啊。他是美术社的陈伟，虽然看起来很冷淡，但其实人很好的。",
       "Background": "bg_cafeteria",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "normal" },
-        { "Id": "liu_mei", "Position": "Left", "Expression": "smile" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "normal"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "cafeteria_06"
     },
     "cafeteria_06": {
       "Id": "cafeteria_06",
       "Type": "Dialogue",
-      "Speaker": "\u9648\u4f1f",
-      "Text": "\u2026\u2026\u4f60\u597d\u3002\u542c\u8bf4\u662f\u65b0\u8f6c\u6765\u7684\u3002",
+      "Speaker": "陈伟",
+      "Text": "……你好。听说是新转来的。",
       "Background": "bg_cafeteria",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "choice_cafeteria_01"
     },
@@ -521,147 +777,255 @@
       "Id": "choice_cafeteria_01",
       "Type": "Choice",
       "Speaker": "",
-      "Text": "\u5982\u4f55\u4e0e\u9648\u4f1f\u6253\u62db\u547c\uff1f",
+      "Text": "如何与陈伟打招呼？",
       "Background": "bg_cafeteria",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "thinking" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "thinking"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Choices": [
-        { "Id": "friendly_chen", "Text": "\u4e3b\u52a8\u548c\u4ed6\u804a\u5929", "Next": "friendly_chen_01" },
-        { "Id": "give_space", "Text": "\u7ed9\u4ed6\u4e00\u4e9b\u7a7a\u95f4", "Next": "give_space_01" }
+        {
+          "Id": "friendly_chen",
+          "Text": "主动和他聊天",
+          "Next": "friendly_chen_01"
+        },
+        {
+          "Id": "give_space",
+          "Text": "给他一些空间",
+          "Next": "give_space_01"
+        }
       ]
     },
     "friendly_chen_01": {
       "Id": "friendly_chen_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u55e8\uff0c\u6211\u662f\u65b0\u6765\u7684\u540c\u5b66\u3002\u542c\u8bf4\u4f60\u662f\u7f8e\u672f\u793e\u7684\uff1f\u6211\u4e5f\u5f88\u559c\u6b22\u753b\u753b\uff01",
+      "Speaker": "主角",
+      "Text": "嗨，我是新来的同学。听说你是美术社的？我也很喜欢画画！",
       "Background": "bg_cafeteria",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "friendly_chen_02"
     },
     "friendly_chen_02": {
       "Id": "friendly_chen_02",
       "Type": "Dialogue",
-      "Speaker": "\u9648\u4f1f",
-      "Text": "\u2026\u2026\u771f\u7684\u5417\uff1f\u90a3\u6709\u65f6\u95f4\u53ef\u4ee5\u6765\u7f8e\u672f\u5ba4\u770b\u770b\u3002",
+      "Speaker": "陈伟",
+      "Text": "……真的吗？那有时间可以来美术室看看。",
       "Background": "bg_cafeteria",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "friendly_chen_03"
     },
     "friendly_chen_03": {
       "Id": "friendly_chen_03",
       "Type": "Dialogue",
-      "Speaker": "\u5218\u6885",
-      "Text": "\u54c8\u54c8\uff0c\u9648\u4f1f\u96be\u5f97\u4e3b\u52a8\u9080\u8bf7\u4eba\u5462\uff01\u4f60\u4e00\u5b9a\u8981\u53bb\u54e6\uff01",
+      "Speaker": "刘梅",
+      "Text": "哈哈，陈伟难得主动邀请人呢！你一定要去哦！",
       "Background": "bg_cafeteria",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "smile" },
-        { "Id": "liu_mei", "Position": "Left", "Expression": "smile" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "afternoon_01"
     },
     "give_space_01": {
       "Id": "give_space_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u4f60\u597d\uff0c\u8bf7\u591a\u5173\u7167\u3002",
+      "Speaker": "主角",
+      "Text": "你好，请多关照。",
       "Background": "bg_cafeteria",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "give_space_02"
     },
     "give_space_02": {
       "Id": "give_space_02",
       "Type": "Dialogue",
-      "Speaker": "\u5218\u6885",
-      "Text": "\u9648\u4f1f\u5c31\u662f\u8fd9\u6837\uff0c\u770b\u8d77\u6765\u51b7\u6de1\u4f46\u5176\u5b9e\u5f88\u597d\u76f8\u5904\u7684\u3002\u4e0d\u8fc7\u4ed6\u7684\u753b\u771f\u7684\u5f88\u68d2\uff01",
+      "Speaker": "刘梅",
+      "Text": "陈伟就是这样，看起来冷淡但其实很好相处的。不过他的画真的很棒！",
       "Background": "bg_cafeteria",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "liu_mei", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "afternoon_01"
     },
     "talk_lin_yue_01": {
       "Id": "talk_lin_yue_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u6797\u60a6\uff0c\u4f60\u662f\u4ec0\u4e48\u65f6\u5019\u8f6c\u6765\u7684\uff1f",
+      "Speaker": "主角",
+      "Text": "林悦，你是什么时候转来的？",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "talk_lin_yue_02"
     },
     "talk_lin_yue_02": {
       "Id": "talk_lin_yue_02",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u6211\u6bd4\u4f60\u65e9\u6765\u4e00\u5468\u3002\u8fd9\u6240\u5b66\u6821\u2026\u2026\u867d\u7136\u5f88\u6f02\u4eae\uff0c\u4f46\u603b\u89c9\u5f97\u6709\u4e9b\u795e\u79d8\u3002",
+      "Speaker": "林悦",
+      "Text": "我比你早来一周。这所学校……虽然很漂亮，但总觉得有些神秘。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "thinking" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "thinking"
+        }
       ],
       "Next": "talk_lin_yue_03"
     },
     "talk_lin_yue_03": {
       "Id": "talk_lin_yue_03",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u542c\u8bf4\u5b66\u6821\u91cc\u6709\u4e00\u4e2a\u53e4\u8001\u7684\u4f20\u8bf4\u2026\u2026\u5173\u4e8e\u5929\u53f0\u4e0a\u7684\u90a3\u68f5\u6a31\u82b1\u6811\u3002",
+      "Speaker": "林悦",
+      "Text": "听说学校里有一个古老的传说……关于天台上的那棵樱花树。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "serious" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "serious"
+        }
       ],
       "Next": "talk_lin_yue_04"
     },
     "talk_lin_yue_04": {
       "Id": "talk_lin_yue_04",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u4ec0\u4e48\u4f20\u8bf4\uff1f\u8bf4\u6765\u542c\u542c\u3002",
+      "Speaker": "主角",
+      "Text": "什么传说？说来听听。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "curious" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "curious"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "talk_lin_yue_05"
     },
     "talk_lin_yue_05": {
       "Id": "talk_lin_yue_05",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u4f20\u8bf4\u5728\u9ec4\u660f\u65f6\u5206\uff0c\u5982\u679c\u4e24\u4e2a\u4eba\u4e00\u8d77\u7ad9\u5728\u6a31\u82b1\u6811\u4e0b\uff0c\u4ed6\u4eec\u4e4b\u95f4\u7684\u7f81\u7eca\u4f1a\u6c38\u8fdc\u4e0d\u53d8\u3002",
+      "Speaker": "林悦",
+      "Text": "传说在黄昏时分，如果两个人一起站在樱花树下，他们之间的羁绊会永远不变。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "talk_lin_yue_06"
     },
     "talk_lin_yue_06": {
       "Id": "talk_lin_yue_06",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u4e0d\u8fc7\u8fd8\u6709\u53e6\u4e00\u4e2a\u7248\u672c\u2026\u2026\u636e\u8bf4\u5728\u6708\u5706\u4e4b\u591c\uff0c\u5982\u679c\u4e00\u4e2a\u4eba\u72ec\u81ea\u5728\u6a31\u82b1\u6811\u4e0b\u8bb8\u613f\uff0c\u5c31\u80fd\u770b\u5230\u672a\u6765\u7684\u6837\u5b50\u3002",
+      "Speaker": "林悦",
+      "Text": "不过还有另一个版本……据说在月圆之夜，如果一个人独自在樱花树下许愿，就能看到未来的样子。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "curious" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "thinking" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "curious"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "thinking"
+        }
       ],
       "Next": "choice_legend_01"
     },
@@ -669,73 +1033,125 @@
       "Id": "choice_legend_01",
       "Type": "Choice",
       "Speaker": "",
-      "Text": "\u542c\u5230\u8fd9\u4e2a\u4f20\u8bf4\uff0c\u4f60\u7684\u53cd\u5e94\u662f\u2026\u2026",
+      "Text": "听到这个传说，你的反应是……",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "thinking" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "thinking"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Choices": [
-        { "Id": "believe_legend", "Text": "\u6211\u76f8\u4fe1\u4f20\u8bf4\uff0c\u653e\u5b66\u540e\u53bb\u770b\u770b\u5427", "Next": "believe_legend_01" },
-        { "Id": "dont_believe", "Text": "\u8fd9\u79cd\u4f20\u8bf4\u542c\u542c\u5c31\u597d", "Next": "dont_believe_01" }
+        {
+          "Id": "believe_legend",
+          "Text": "我相信传说，放学后去看看吧",
+          "Next": "believe_legend_01"
+        },
+        {
+          "Id": "dont_believe",
+          "Text": "这种传说听听就好",
+          "Next": "dont_believe_01"
+        }
       ]
     },
     "believe_legend_01": {
       "Id": "believe_legend_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u653e\u5b66\u540e\u6211\u4eec\u4e00\u8d77\u53bb\u770b\u770b\u5427\uff01\u6211\u4e5f\u60f3\u770b\u770b\u90a3\u68f5\u6a31\u82b1\u6811\u3002",
+      "Speaker": "主角",
+      "Text": "放学后我们一起去看看吧！我也想看看那棵樱花树。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "believe_legend_02"
     },
     "believe_legend_02": {
       "Id": "believe_legend_02",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u55ef\uff01\u8bf4\u597d\u4e86\u54e6\u3002\u90a3\u68f5\u6a31\u82b1\u6811\u2026\u2026\u771f\u7684\u5f88\u7f8e\u3002",
+      "Speaker": "林悦",
+      "Text": "嗯！说好了哦。那棵樱花树……真的很美。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "afternoon_01"
     },
     "dont_believe_01": {
       "Id": "dont_believe_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u4f20\u8bf4\u800c\u5df2\u5427\u2026\u2026\u4e0d\u8fc7\u53bb\u770b\u770b\u4e5f\u65e0\u59a8\u3002",
+      "Speaker": "主角",
+      "Text": "传说而已吧……不过去看看也无妨。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "calm" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "calm"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "dont_believe_02"
     },
     "dont_believe_02": {
       "Id": "dont_believe_02",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u867d\u7136\u4f60\u53ef\u80fd\u4e0d\u76f8\u4fe1\uff0c\u4f46\u5f88\u591a\u4eba\u90fd\u8bf4\u8fd9\u4e2a\u4f20\u8bf4\u5f88\u7075\u9a8c\u5462\u3002",
+      "Speaker": "林悦",
+      "Text": "虽然你可能不相信，但很多人都说这个传说很灵验呢。",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "calm" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "calm"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "afternoon_01"
     },
     "explore_01": {
       "Id": "explore_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u8fd8\u662f\u81ea\u5df1\u5230\u5904\u8f6c\u8f6c\u5427\uff0c\u591a\u4e86\u89e3\u4e86\u89e3\u8fd9\u6240\u5b66\u6821\u3002",
+      "Speaker": "主角",
+      "Text": "还是自己到处转转吧，多了解了解这所学校。",
       "Background": "bg_school_corridor",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "normal"
+        }
       ],
       "Next": "explore_02"
     },
@@ -743,7 +1159,7 @@
       "Id": "explore_02",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u8d70\u5728\u957f\u957f\u7684\u8d70\u5eca\u4e0a\uff0c\u4e24\u65c1\u662f\u4e00\u95f4\u95f4\u6559\u5ba4\u3002\u8fdc\u5904\u4f20\u6765\u64cd\u573a\u4e0a\u7684\u5468\u558a\u58f0\u3002",
+      "Text": "走在长长的走廊上，两旁是一间间教室。远处传来操场上的周喊声。",
       "Background": "bg_school_corridor",
       "Characters": [],
       "Next": "explore_03"
@@ -752,7 +1168,7 @@
       "Id": "explore_03",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u8d70\u5eca\u5c3d\u5934\uff0c\u4e00\u6247\u95e8\u534a\u5f00\u7740\u3002\u91cc\u9762\u4f20\u6765\u9635\u9635\u7434\u58f0\u3002",
+      "Text": "走廊尽头，一扇门半开着。里面传来阵阵琴声。",
       "Background": "bg_school_corridor",
       "Characters": [],
       "Next": "explore_04"
@@ -760,60 +1176,100 @@
     "explore_04": {
       "Id": "explore_04",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u8fd9\u662f\u2026\u2026\u94a2\u7434\u58f0\uff1f\u6ca1\u60f3\u5230\u5b66\u6821\u91cc\u8fd8\u6709\u97f3\u4e50\u6559\u5ba4\u3002",
+      "Speaker": "主角",
+      "Text": "这是……钢琴声？没想到学校里还有音乐教室。",
       "Background": "bg_music_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "xia_yin", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "explore_05"
     },
     "explore_05": {
       "Id": "explore_05",
       "Type": "Dialogue",
-      "Speaker": "\u590f\u97f3",
-      "Text": "\u2026\u2026\u8c01\u5728\u90a3\uff1f",
+      "Speaker": "夏音",
+      "Text": "……谁在那？",
       "Background": "bg_music_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "xia_yin", "Position": "Right", "Expression": "serious" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "serious"
+        }
       ],
       "Next": "explore_06"
     },
     "explore_06": {
       "Id": "explore_06",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u554a\uff0c\u62b1\u6b49\uff01\u6211\u662f\u65b0\u6765\u7684\uff0c\u542c\u5230\u7434\u58f0\u5c31\u2026\u2026",
+      "Speaker": "主角",
+      "Text": "啊，抱歉！我是新来的，听到琴声就……",
       "Background": "bg_music_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "nervous" },
-        { "Id": "xia_yin", "Position": "Right", "Expression": "calm" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "nervous"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
       ],
       "Next": "explore_07"
     },
     "explore_07": {
       "Id": "explore_07",
       "Type": "Dialogue",
-      "Speaker": "\u590f\u97f3",
-      "Text": "\u2026\u2026\u6ca1\u5173\u7cfb\u3002\u6211\u662f\u97f3\u4e50\u793e\u7684\u590f\u97f3\u3002\u5982\u679c\u4f60\u60f3\u542c\u7684\u8bdd\uff0c\u4e0b\u6b21\u4e5f\u53ef\u4ee5\u6765\u3002",
+      "Speaker": "夏音",
+      "Text": "……没关系。我是音乐社的夏音。如果你想听的话，下次也可以来。",
       "Background": "bg_music_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "xia_yin", "Position": "Right", "Expression": "calm" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
       ],
       "Next": "explore_08"
     },
     "explore_08": {
       "Id": "explore_08",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u8c22\u8c22\uff01\u90a3\u6211\u4e0b\u6b21\u4e00\u5b9a\u6765\u3002\u4f60\u5f39\u7684\u66f2\u5b50\u771f\u597d\u542c\u3002",
+      "Speaker": "主角",
+      "Text": "谢谢！那我下次一定来。你弹的曲子真好听。",
       "Background": "bg_music_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "xia_yin", "Position": "Right", "Expression": "calm" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
       ],
       "Next": "afternoon_01"
     },
@@ -821,7 +1277,7 @@
       "Id": "rooftop_01",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u63a8\u5f00\u901a\u5f80\u5929\u53f0\u7684\u95e8\uff0c\u4e00\u9635\u6d77\u98ce\u8fce\u9762\u5439\u6765\u3002\u8fdc\u5904\u662f\u65e0\u8fb9\u65e0\u9645\u7684\u851a\u84dd\u5927\u6d77\uff0c\u9633\u5149\u5728\u6d77\u9762\u4e0a\u95ea\u70c1\u3002",
+      "Text": "推开通往天台的门，一阵海风迎面吹来。远处是无边无际的蔚蓝大海，阳光在海面上闪烁。",
       "Background": "bg_rooftop",
       "Characters": [],
       "Next": "rooftop_02"
@@ -829,11 +1285,15 @@
     "rooftop_02": {
       "Id": "rooftop_02",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u597d\u7f8e\u554a\u2026\u2026\u8fd9\u5c31\u662f\u6d77\u8fb9\u7684\u5b66\u6821\u5417\u3002",
+      "Speaker": "主角",
+      "Text": "好美啊……这就是海边的学校吗。",
       "Background": "bg_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
       ],
       "Next": "rooftop_03"
     },
@@ -841,59 +1301,99 @@
       "Id": "rooftop_03",
       "Type": "Dialogue",
       "Speaker": "???",
-      "Text": "\u4f60\u4e5f\u559c\u6b22\u6765\u8fd9\u91cc\u5417\uff1f",
+      "Text": "你也喜欢来这里吗？",
       "Background": "bg_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "rooftop_04"
     },
     "rooftop_04": {
       "Id": "rooftop_04",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u554a\u2026\u2026\u55ef\uff0c\u7b2c\u4e00\u6b21\u6765\u3002\u8fd9\u91cc\u7684\u98ce\u666f\u771f\u7684\u5f88\u597d\u3002",
+      "Speaker": "主角",
+      "Text": "啊……嗯，第一次来。这里的风景真的很好。",
       "Background": "bg_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "rooftop_05"
     },
     "rooftop_05": {
       "Id": "rooftop_05",
       "Type": "Dialogue",
-      "Speaker": "\u82cf\u7476",
-      "Text": "\u8fd9\u91cc\u662f\u6211\u6700\u559c\u6b22\u6765\u7684\u5730\u65b9\u3002\u6bcf\u6b21\u5fc3\u60c5\u4e0d\u597d\u7684\u65f6\u5019\uff0c\u5c31\u4f1a\u6765\u8fd9\u91cc\u770b\u770b\u6d77\u3002",
+      "Speaker": "苏瑶",
+      "Text": "这里是我最喜欢来的地方。每次心情不好的时候，就会来这里看看海。",
       "Background": "bg_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "calm" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "calm"
+        }
       ],
       "Next": "rooftop_06"
     },
     "rooftop_06": {
       "Id": "rooftop_06",
       "Type": "Dialogue",
-      "Speaker": "\u82cf\u7476",
-      "Text": "\u5bf9\u4e86\uff0c\u4f60\u8fd8\u6ca1\u505a\u81ea\u6211\u4ecb\u7ecd\u5427\uff1f\u4e2d\u5348\u7684\u73ed\u7ea7\u4ecb\u7ecd\uff0c\u8981\u4e0d\u8981\u6211\u6765\u5e2e\u4f60\uff1f",
+      "Speaker": "苏瑶",
+      "Text": "对了，你还没做自我介绍吧？中午的班级介绍，要不要我来帮你？",
       "Background": "bg_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "rooftop_07"
     },
     "rooftop_07": {
       "Id": "rooftop_07",
       "Type": "Dialogue",
-      "Speaker": "\u82cf\u7476",
-      "Text": "\u8fd8\u6709\uff0c\u4f60\u770b\u5230\u90a3\u68f5\u6a31\u82b1\u6811\u4e86\u5417\uff1f\u636e\u8bf4\u5728\u9ec4\u660f\u65f6\u5206\u7ad9\u5728\u6811\u4e0b\uff0c\u80fd\u5b9e\u73b0\u5fc3\u4e2d\u7684\u613f\u671b\u5462\u3002",
+      "Speaker": "苏瑶",
+      "Text": "还有，你看到那棵樱花树了吗？据说在黄昏时分站在树下，能实现心中的愿望呢。",
       "Background": "bg_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "curious" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "curious"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "afternoon_01"
     },
@@ -901,7 +1401,7 @@
       "Id": "library_01",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u56fe\u4e66\u9986\u91cc\u5b89\u9759\u5f97\u53ea\u80fd\u542c\u5230\u7ffb\u4e66\u7684\u58f0\u97f3\u3002\u9633\u5149\u900f\u8fc7\u843d\u5730\u7a97\u6d12\u5728\u6728\u8d28\u4e66\u67b6\u4e0a\uff0c\u7a7a\u6c14\u4e2d\u5f25\u6f2b\u7740\u7eb8\u5f20\u7684\u6e05\u9999\u3002",
+      "Text": "图书馆里安静得只能听到翻书的声音。阳光透过落地窗洒在木质书架上，空气中弥漫着纸张的清香。",
       "Background": "bg_library",
       "Characters": [],
       "Next": "library_02"
@@ -909,11 +1409,15 @@
     "library_02": {
       "Id": "library_02",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u597d\u5b89\u9759\u2026\u2026\u8fd9\u91cc\u5e94\u8be5\u662f\u4e2a\u9002\u5408\u72ec\u5904\u7684\u597d\u5730\u65b9\u3002",
+      "Speaker": "主角",
+      "Text": "好安静……这里应该是个适合独处的好地方。",
       "Background": "bg_library",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "calm" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
       ],
       "Next": "library_03"
     },
@@ -921,7 +1425,7 @@
       "Id": "library_03",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u5728\u4e66\u67b6\u95f4\u7a7f\u884c\u65f6\uff0c\u4e00\u672c\u4ece\u9ad8\u5904\u6ed1\u843d\u7684\u4e66\u5dee\u70b9\u7838\u5230\u5934\u4e0a\u2014\u2014\u5e78\u597d\u6709\u4eba\u53ca\u65f6\u63a5\u4f4f\u4e86\u5b83\u3002",
+      "Text": "在书架间穿行时，一本从高处滑落的书差点砸到头上——幸好有人及时接住了它。",
       "Background": "bg_library",
       "Characters": [],
       "Next": "library_04"
@@ -930,47 +1434,79 @@
       "Id": "library_04",
       "Type": "Dialogue",
       "Speaker": "???",
-      "Text": "\u5c0f\u5fc3\u70b9\u3002\u8fd9\u91cc\u4e66\u67b6\u5f88\u9ad8\uff0c\u7ecf\u5e38\u4f1a\u6709\u4e66\u6389\u4e0b\u6765\u3002",
+      "Text": "小心点。这里书架很高，经常会有书掉下来。",
       "Background": "bg_library",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "library_05"
     },
     "library_05": {
       "Id": "library_05",
       "Type": "Dialogue",
-      "Speaker": "\u5f20\u6d69",
-      "Text": "\u6211\u662f\u5f20\u6d69\uff0c\u7bee\u7403\u793e\u7684\u3002\u4f60\u5462\uff1f\u770b\u8d77\u6765\u662f\u521a\u8f6c\u6765\u7684\u5427\uff1f",
+      "Speaker": "张浩",
+      "Text": "我是张浩，篮球社的。你呢？看起来是刚转来的吧？",
       "Background": "bg_library",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "library_06"
     },
     "library_06": {
       "Id": "library_06",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u55ef\uff0c\u4eca\u5929\u7b2c\u4e00\u5929\u6765\u3002\u6ca1\u60f3\u5230\u5728\u56fe\u4e66\u9986\u5c31\u9047\u5230\u4e86\u719f\u4eba\u3002",
+      "Speaker": "主角",
+      "Text": "嗯，今天第一天来。没想到在图书馆就遇到了熟人。",
       "Background": "bg_library",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "library_07"
     },
     "library_07": {
       "Id": "library_07",
       "Type": "Dialogue",
-      "Speaker": "\u5f20\u6d69",
-      "Text": "\u54c8\u54c8\uff0c\u522b\u770b\u6211\u8fd9\u6837\uff0c\u6211\u53ef\u662f\u4e2a\u4e66\u866b\u5462\uff01\u653e\u5b66\u540e\u8981\u4e0d\u8981\u4e00\u8d77\u53bb\u6253\u7403\uff1f",
+      "Speaker": "张浩",
+      "Text": "哈哈，别看我这样，我可是个书虫呢！放学后要不要一起去打球？",
       "Background": "bg_library",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "choice_sports_01"
     },
@@ -978,38 +1514,70 @@
       "Id": "choice_sports_01",
       "Type": "Choice",
       "Speaker": "",
-      "Text": "\u653e\u5b66\u540e\u8981\u53bb\u6253\u7403\u5417\uff1f",
+      "Text": "放学后要去打球吗？",
       "Background": "bg_library",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "thinking" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "thinking"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Choices": [
-        { "Id": "play_basketball", "Text": "\u597d\u554a\uff0c\u4e00\u8d77\u53bb\u6253\u7bee\u7403", "Next": "play_basketball_01" },
-        { "Id": "watch_game", "Text": "\u6211\u5728\u65c1\u8fb9\u770b\u7740\u5c31\u597d", "Next": "watch_game_01" }
+        {
+          "Id": "play_basketball",
+          "Text": "好啊，一起去打篮球",
+          "Next": "play_basketball_01"
+        },
+        {
+          "Id": "watch_game",
+          "Text": "我在旁边看着就好",
+          "Next": "watch_game_01"
+        }
       ]
     },
     "play_basketball_01": {
       "Id": "play_basketball_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u597d\u554a\uff01\u867d\u7136\u6280\u672f\u4e0d\u592a\u597d\uff0c\u4f46\u6211\u5f88\u4e50\u610f\u3002",
+      "Speaker": "主角",
+      "Text": "好啊！虽然技术不太好，但我很乐意。",
       "Background": "bg_basketball_court",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "play_basketball_02"
     },
     "play_basketball_02": {
       "Id": "play_basketball_02",
       "Type": "Dialogue",
-      "Speaker": "\u5f20\u6d69",
-      "Text": "\u6ca1\u5173\u7cfb\uff01\u7bee\u7403\u6700\u91cd\u8981\u7684\u5c31\u662f\u5f00\u5fc3\uff01\u6765\u5427\uff01",
+      "Speaker": "张浩",
+      "Text": "没关系！篮球最重要的就是开心！来吧！",
       "Background": "bg_basketball_court",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "determined" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "determined"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "play_basketball_03"
     },
@@ -1017,7 +1585,7 @@
       "Id": "play_basketball_03",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u5728\u7bee\u7403\u573a\u4e0a\u5c3d\u60c5\u5947\u8dd1\uff0c\u6c57\u6c34\u6d78\u6e7f\u4e86\u8863\u670d\u3002\u867d\u7136\u8f93\u4e86\u6bd4\u8d5b\uff0c\u4f46\u5374\u6536\u83b7\u4e86\u6ee1\u6ee1\u7684\u5feb\u4e50\u3002",
+      "Text": "在篮球场上尽情奇跑，汗水浸湿了衣服。虽然输了比赛，但却收获了满满的快乐。",
       "Background": "bg_basketball_court",
       "Characters": [],
       "Next": "afternoon_01"
@@ -1025,24 +1593,40 @@
     "watch_game_01": {
       "Id": "watch_game_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u6211\u4eca\u5929\u5c31\u5148\u65c1\u89c2\u5427\uff0c\u6539\u5929\u518d\u4e00\u8d77\u6253\u3002",
+      "Speaker": "主角",
+      "Text": "我今天就先旁观吧，改天再一起打。",
       "Background": "bg_basketball_court",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "watch_game_02"
     },
     "watch_game_02": {
       "Id": "watch_game_02",
       "Type": "Dialogue",
-      "Speaker": "\u5f20\u6d69",
-      "Text": "\u884c\uff01\u90a3\u4f60\u770b\u770b\u6211\u7684\u6280\u672f\uff0c\u4fdd\u8bc1\u8ba9\u4f60\u5927\u5403\u4e00\u60ca\uff01",
+      "Speaker": "张浩",
+      "Text": "行！那你看看我的技术，保证让你大吃一惊！",
       "Background": "bg_basketball_court",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "afternoon_01"
     },
@@ -1050,7 +1634,7 @@
       "Id": "student_council_01",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u6309\u7167\u516c\u4ea4\u8f66\u4e0a\u90a3\u4e2a\u5973\u5b69\u7684\u6307\u793a\uff0c\u6765\u5230\u4e86\u5b66\u751f\u4f1a\u529e\u516c\u5ba4\u3002\u95e8\u4e0a\u8d34\u7740\u201c\u5b66\u751f\u4f1a\u201d\u7684\u94ed\u724c\u3002",
+      "Text": "按照公交车上那个女孩的指示，来到了学生会办公室。门上贴着“学生会”的铭牌。",
       "Background": "bg_school_corridor",
       "Characters": [],
       "Next": "student_council_02"
@@ -1059,7 +1643,7 @@
       "Id": "student_council_02",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u8f7b\u8f7b\u6572\u4e86\u6572\u95e8\uff0c\u91cc\u9762\u4f20\u6765\u4e00\u4e2a\u6e05\u8106\u7684\u58f0\u97f3\u3002",
+      "Text": "轻轻敲了敲门，里面传来一个清脆的声音。",
       "Background": "bg_school_corridor",
       "Characters": [],
       "Next": "student_council_03"
@@ -1067,36 +1651,60 @@
     "student_council_03": {
       "Id": "student_council_03",
       "Type": "Dialogue",
-      "Speaker": "\u82cf\u7476",
-      "Text": "\u8bf7\u8fdb\uff01\u2026\u2026\u554a\uff0c\u662f\u4f60\uff01\u516c\u4ea4\u8f66\u4e0a\u7684\u8f6c\u5b66\u751f\uff01",
+      "Speaker": "苏瑶",
+      "Text": "请进！……啊，是你！公交车上的转学生！",
       "Background": "bg_student_council",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "student_council_04"
     },
     "student_council_04": {
       "Id": "student_council_04",
       "Type": "Dialogue",
-      "Speaker": "\u82cf\u7476",
-      "Text": "\u6b22\u8fce\u6765\u5230\u5b66\u751f\u4f1a\uff01\u6211\u662f\u5b66\u751f\u4f1a\u4e3b\u5e2d\u82cf\u7476\u3002\u4ee5\u540e\u6709\u4ec0\u4e48\u56f0\u96be\u90fd\u53ef\u4ee5\u6765\u627e\u6211\u54e6\u3002",
+      "Speaker": "苏瑶",
+      "Text": "欢迎来到学生会！我是学生会主席苏瑶。以后有什么困难都可以来找我哦。",
       "Background": "bg_student_council",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "student_council_05"
     },
     "student_council_05": {
       "Id": "student_council_05",
       "Type": "Dialogue",
-      "Speaker": "\u82cf\u7476",
-      "Text": "\u5bf9\u4e86\uff0c\u4e0b\u5468\u5b66\u6821\u8981\u4e3e\u529e\u6587\u5316\u8282\uff0c\u4f60\u613f\u610f\u6765\u5e2e\u5fd9\u5417\uff1f",
+      "Speaker": "苏瑶",
+      "Text": "对了，下周学校要举办文化节，你愿意来帮忙吗？",
       "Background": "bg_student_council",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "choice_culture_festival"
     },
@@ -1104,62 +1712,110 @@
       "Id": "choice_culture_festival",
       "Type": "Choice",
       "Speaker": "",
-      "Text": "\u8981\u53c2\u52a0\u6587\u5316\u8282\u7b79\u5907\u5417\uff1f",
+      "Text": "要参加文化节筹备吗？",
       "Background": "bg_student_council",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "thinking" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "thinking"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Choices": [
-        { "Id": "join_festival", "Text": "\u597d\u554a\uff0c\u6211\u5f88\u4e50\u610f\u5e2e\u5fd9", "Next": "join_festival_01" },
-        { "Id": "decline_festival", "Text": "\u521a\u8f6c\u6765\uff0c\u8fd8\u662f\u5148\u9002\u5e94\u4e00\u4e0b\u5427", "Next": "decline_festival_01" }
+        {
+          "Id": "join_festival",
+          "Text": "好啊，我很乐意帮忙",
+          "Next": "join_festival_01"
+        },
+        {
+          "Id": "decline_festival",
+          "Text": "刚转来，还是先适应一下吧",
+          "Next": "decline_festival_01"
+        }
       ]
     },
     "join_festival_01": {
       "Id": "join_festival_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u597d\u554a\uff01\u6587\u5316\u8282\u542c\u8d77\u6765\u5f88\u6709\u8da3\uff0c\u6211\u4e5f\u60f3\u51fa\u4e00\u4efd\u529b\u3002",
+      "Speaker": "主角",
+      "Text": "好啊！文化节听起来很有趣，我也想出一份力。",
       "Background": "bg_student_council",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "join_festival_02"
     },
     "join_festival_02": {
       "Id": "join_festival_02",
       "Type": "Dialogue",
-      "Speaker": "\u82cf\u7476",
-      "Text": "\u592a\u597d\u4e86\uff01\u90a3\u4ece\u660e\u5929\u5f00\u59cb\uff0c\u653e\u5b66\u540e\u5c31\u7559\u4e0b\u6765\u5f00\u4f1a\u5427\u3002\u6211\u76f8\u4fe1\u4f60\u4e00\u5b9a\u4f1a\u6210\u4e3a\u5f88\u597d\u7684\u5e2e\u624b\uff01",
+      "Speaker": "苏瑶",
+      "Text": "太好了！那从明天开始，放学后就留下来开会吧。我相信你一定会成为很好的帮手！",
       "Background": "bg_student_council",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "determined" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "determined"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "afternoon_01"
     },
     "decline_festival_01": {
       "Id": "decline_festival_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u62b1\u6b49\u2026\u2026\u6211\u521a\u8f6c\u6765\uff0c\u60f3\u5148\u9002\u5e94\u4e00\u4e0b\u73af\u5883\u3002",
+      "Speaker": "主角",
+      "Text": "抱歉……我刚转来，想先适应一下环境。",
       "Background": "bg_student_council",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "nervous" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "nervous"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "decline_festival_02"
     },
     "decline_festival_02": {
       "Id": "decline_festival_02",
       "Type": "Dialogue",
-      "Speaker": "\u82cf\u7476",
-      "Text": "\u6ca1\u5173\u7cfb\uff0c\u4e0d\u7528\u52c9\u5f3a\u81ea\u5df1\u3002\u7b49\u4f60\u89c9\u5f97\u51c6\u5907\u597d\u4e86\uff0c\u968f\u65f6\u6765\u627e\u6211\u3002",
+      "Speaker": "苏瑶",
+      "Text": "没关系，不用勉强自己。等你觉得准备好了，随时来找我。",
       "Background": "bg_student_council",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "afternoon_01"
     },
@@ -1167,7 +1823,7 @@
       "Id": "afternoon_01",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u4e0b\u5348\u7684\u8bfe\u7a0b\u5f88\u5feb\u5c31\u7ed3\u675f\u4e86\u3002\u5915\u9633\u7684\u4f59\u6656\u6d12\u5728\u6821\u56ed\u7684\u6bcf\u4e00\u4e2a\u89d2\u843d\uff0c\u4e00\u5207\u90fd\u67d3\u4e0a\u4e86\u91d1\u8272\u3002",
+      "Text": "下午的课程很快就结束了。夕阳的余晖洒在校园的每一个角落，一切都染上了金色。",
       "Background": "bg_school_garden",
       "Characters": [],
       "Next": "afternoon_02"
@@ -1175,11 +1831,15 @@
     "afternoon_02": {
       "Id": "afternoon_02",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u7b2c\u4e00\u5929\u5c31\u8fd9\u6837\u7ed3\u675f\u4e86\u2026\u2026\u867d\u7136\u6709\u4e9b\u7d27\u5f20\uff0c\u4f46\u4e5f\u8ba4\u8bc6\u4e86\u4e0d\u5c11\u4eba\u3002",
+      "Speaker": "主角",
+      "Text": "第一天就这样结束了……虽然有些紧张，但也认识了不少人。",
       "Background": "bg_school_garden",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "normal"
+        }
       ],
       "Next": "choice_afternoon_01"
     },
@@ -1187,22 +1847,38 @@
       "Id": "choice_afternoon_01",
       "Type": "Choice",
       "Speaker": "",
-      "Text": "\u653e\u5b66\u540e\u8981\u505a\u4ec0\u4e48\uff1f",
+      "Text": "放学后要做什么？",
       "Background": "bg_school_garden",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "thinking" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
       ],
       "Choices": [
-        { "Id": "go_sakura_tree", "Text": "\u53bb\u5929\u53f0\u770b\u90a3\u68f5\u6a31\u82b1\u6811", "Next": "sakura_01" },
-        { "Id": "go_art_room", "Text": "\u53bb\u7f8e\u672f\u5ba4\u770b\u770b", "Next": "art_room_01" },
-        { "Id": "go_home_direct", "Text": "\u76f4\u63a5\u56de\u5bb6", "Next": "go_home_01" }
+        {
+          "Id": "go_sakura_tree",
+          "Text": "去天台看那棵樱花树",
+          "Next": "sakura_01"
+        },
+        {
+          "Id": "go_art_room",
+          "Text": "去美术室看看",
+          "Next": "art_room_01"
+        },
+        {
+          "Id": "go_home_direct",
+          "Text": "直接回家",
+          "Next": "go_home_01"
+        }
       ]
     },
     "sakura_01": {
       "Id": "sakura_01",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u722c\u4e0a\u5929\u53f0\uff0c\u90a3\u68f5\u53e4\u8001\u7684\u6a31\u82b1\u6811\u5c31\u5728\u773c\u524d\u3002\u5915\u9633\u7684\u5149\u7ebf\u900f\u8fc7\u679d\u53f6\uff0c\u6d12\u4e0b\u6591\u9a73\u7684\u5149\u5f71\u3002",
+      "Text": "爬上天台，那棵古老的樱花树就在眼前。夕阳的光线透过枝叶，洒下斑驳的光影。",
       "Background": "bg_sunset_rooftop",
       "Characters": [],
       "Next": "sakura_02"
@@ -1210,35 +1886,55 @@
     "sakura_02": {
       "Id": "sakura_02",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u8fd9\u68f5\u6a31\u82b1\u6811\u2026\u2026\u771f\u7684\u5f88\u7f8e\u3002\u96be\u602a\u4f1a\u6709\u90a3\u6837\u7684\u4f20\u8bf4\u3002",
+      "Speaker": "主角",
+      "Text": "这棵樱花树……真的很美。难怪会有那样的传说。",
       "Background": "bg_sunset_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "calm" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
       ],
       "Next": "sakura_03"
     },
     "sakura_03": {
       "Id": "sakura_03",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u4f60\u4e5f\u6765\u4e86\u554a\uff01\u6211\u5c31\u77e5\u9053\u4f60\u4f1a\u6765\u7684\u3002",
+      "Speaker": "林悦",
+      "Text": "你也来了啊！我就知道你会来的。",
       "Background": "bg_sunset_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "sakura_04"
     },
     "sakura_04": {
       "Id": "sakura_04",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u5728\u8fd9\u68f5\u6811\u4e0b\uff0c\u6211\u8bb8\u4e86\u4e00\u4e2a\u613f\u671b\u3002\u5e0c\u671b\u5728\u8fd9\u6240\u5b66\u6821\u91cc\uff0c\u80fd\u627e\u5230\u771f\u6b63\u91cd\u8981\u7684\u4e1c\u897f\u3002",
+      "Speaker": "林悦",
+      "Text": "在这棵树下，我许了一个愿望。希望在这所学校里，能找到真正重要的东西。",
       "Background": "bg_sunset_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "thinking" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "thinking"
+        }
       ],
       "Next": "choice_sakura_01"
     },
@@ -1246,62 +1942,110 @@
       "Id": "choice_sakura_01",
       "Type": "Choice",
       "Speaker": "",
-      "Text": "\u5728\u6a31\u82b1\u6811\u4e0b\uff0c\u4f60\u60f3\u8bf4\u4ec0\u4e48\uff1f",
+      "Text": "在樱花树下，你想说什么？",
       "Background": "bg_sunset_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "thinking" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "thinking"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Choices": [
-        { "Id": "sakura_wish", "Text": "\u8bb8\u4e0b\u81ea\u5df1\u7684\u613f\u671b", "Next": "sakura_wish_01" },
-        { "Id": "sakura_promise", "Text": "\u548c\u6797\u60a6\u7ea6\u5b9a\u4ee5\u540e\u4e00\u8d77\u6765", "Next": "sakura_promise_01" }
+        {
+          "Id": "sakura_wish",
+          "Text": "许下自己的愿望",
+          "Next": "sakura_wish_01"
+        },
+        {
+          "Id": "sakura_promise",
+          "Text": "和林悦约定以后一起来",
+          "Next": "sakura_promise_01"
+        }
       ]
     },
     "sakura_wish_01": {
       "Id": "sakura_wish_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u6211\u5e0c\u671b\u2026\u2026\u5728\u8fd9\u91cc\u80fd\u627e\u5230\u5c5e\u4e8e\u81ea\u5df1\u7684\u4f4d\u7f6e\u3002",
+      "Speaker": "主角",
+      "Text": "我希望……在这里能找到属于自己的位置。",
       "Background": "bg_sunset_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "determined" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "determined"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "sakura_wish_02"
     },
     "sakura_wish_02": {
       "Id": "sakura_wish_02",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u4e00\u5b9a\u4f1a\u7684\u3002\u6211\u76f8\u4fe1\u8fd9\u68f5\u6a31\u82b1\u6811\u4f1a\u5b88\u62a4\u6211\u4eec\u7684\u613f\u671b\u7684\u3002",
+      "Speaker": "林悦",
+      "Text": "一定会的。我相信这棵樱花树会守护我们的愿望的。",
       "Background": "bg_sunset_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "ending_friendship"
     },
     "sakura_promise_01": {
       "Id": "sakura_promise_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u6797\u60a6\uff0c\u4ee5\u540e\u6211\u4eec\u6bcf\u5929\u90fd\u6765\u8fd9\u91cc\u5427\uff01\u4e00\u8d77\u770b\u5915\u9633\u3002",
+      "Speaker": "主角",
+      "Text": "林悦，以后我们每天都来这里吧！一起看夕阳。",
       "Background": "bg_sunset_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "surprised" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "surprised"
+        }
       ],
       "Next": "sakura_promise_02"
     },
     "sakura_promise_02": {
       "Id": "sakura_promise_02",
       "Type": "Dialogue",
-      "Speaker": "\u6797\u60a6",
-      "Text": "\u55ef\uff01\u8bf4\u597d\u4e86\u54e6\uff0c\u4e0d\u53ef\u4ee5\u5fd8\u8bb0\u3002",
+      "Speaker": "林悦",
+      "Text": "嗯！说好了哦，不可以忘记。",
       "Background": "bg_sunset_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "ending_sakura"
     },
@@ -1309,7 +2053,7 @@
       "Id": "art_room_01",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u7f8e\u672f\u5ba4\u5728\u6559\u5b66\u697c\u7684\u6700\u91cc\u9762\uff0c\u63a8\u5f00\u95e8\uff0c\u91cc\u9762\u5f25\u6f2b\u7740\u989c\u6599\u548c\u6cb9\u5f69\u7684\u6c14\u606f\u3002",
+      "Text": "美术室在教学楼的最里面，推开门，里面弥漫着颜料和油彩的气息。",
       "Background": "bg_art_room",
       "Characters": [],
       "Next": "art_room_02"
@@ -1317,36 +2061,60 @@
     "art_room_02": {
       "Id": "art_room_02",
       "Type": "Dialogue",
-      "Speaker": "\u9648\u4f1f",
-      "Text": "\u2026\u2026\u4f60\u6765\u4e86\u3002",
+      "Speaker": "陈伟",
+      "Text": "……你来了。",
       "Background": "bg_art_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "art_room_03"
     },
     "art_room_03": {
       "Id": "art_room_03",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u554a\uff0c\u9648\u4f1f\uff1f\u4f60\u5728\u8fd9\u91cc\u753b\u753b\u554a\u3002\u597d\u6f02\u4eae\u7684\u753b\u2026\u2026",
+      "Speaker": "主角",
+      "Text": "啊，陈伟？你在这里画画啊。好漂亮的画……",
       "Background": "bg_art_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "surprised" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "art_room_04"
     },
     "art_room_04": {
       "Id": "art_room_04",
       "Type": "Dialogue",
-      "Speaker": "\u9648\u4f1f",
-      "Text": "\u2026\u2026\u8fd9\u662f\u6d77\u3002\u6211\u60f3\u753b\u51fa\u6d77\u7684\u58f0\u97f3\u3002\u4f46\u603b\u89c9\u5f97\u7f3a\u4e86\u4ec0\u4e48\u3002",
+      "Speaker": "陈伟",
+      "Text": "……这是海。我想画出海的声音。但总觉得缺了什么。",
       "Background": "bg_art_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "normal" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "serious" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "serious"
+        }
       ],
       "Next": "choice_art_01"
     },
@@ -1354,38 +2122,70 @@
       "Id": "choice_art_01",
       "Type": "Choice",
       "Speaker": "",
-      "Text": "\u5982\u4f55\u56de\u5e94\u9648\u4f1f\uff1f",
+      "Text": "如何回应陈伟？",
       "Background": "bg_art_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "thinking" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "thinking"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Choices": [
-        { "Id": "suggest_music", "Text": "\u4e5f\u8bb8\u9700\u8981\u97f3\u4e50\u7684\u7075\u611f", "Next": "suggest_music_01" },
-        { "Id": "just_watch", "Text": "\u9759\u9759\u770b\u7740\u5c31\u597d", "Next": "just_watch_01" }
+        {
+          "Id": "suggest_music",
+          "Text": "也许需要音乐的灵感",
+          "Next": "suggest_music_01"
+        },
+        {
+          "Id": "just_watch",
+          "Text": "静静看着就好",
+          "Next": "just_watch_01"
+        }
       ]
     },
     "suggest_music_01": {
       "Id": "suggest_music_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u4e5f\u8bb8\u4f60\u9700\u8981\u4e00\u4e9b\u97f3\u4e50\u7684\u7075\u611f\uff1f\u6211\u8ba4\u8bc6\u97f3\u4e50\u793e\u7684\u590f\u97f3\uff0c\u4e5f\u8bb8\u5979\u53ef\u4ee5\u5e2e\u5fd9\u3002",
+      "Speaker": "主角",
+      "Text": "也许你需要一些音乐的灵感？我认识音乐社的夏音，也许她可以帮忙。",
       "Background": "bg_art_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "normal" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
       ],
       "Next": "suggest_music_02"
     },
     "suggest_music_02": {
       "Id": "suggest_music_02",
       "Type": "Dialogue",
-      "Speaker": "\u9648\u4f1f",
-      "Text": "\u97f3\u4e50\u2026\u2026\u4e5f\u8bb8\u5427\u3002\u4e0b\u6b21\u5e26\u5979\u6765\u770b\u770b\u3002",
+      "Speaker": "陈伟",
+      "Text": "音乐……也许吧。下次带她来看看。",
       "Background": "bg_art_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "ending_art_music"
     },
@@ -1393,34 +2193,54 @@
       "Id": "just_watch_01",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u9759\u9759\u5730\u770b\u7740\u9648\u4f1f\u4f5c\u753b\uff0c\u7a97\u5916\u7684\u5915\u9633\u6e10\u6e10\u843d\u4e0b\u3002\u753b\u5e03\u4e0a\u7684\u6d77\u6d6a\u4eff\u4f5b\u771f\u7684\u5728\u6d41\u52a8\u3002",
+      "Text": "静静地看着陈伟作画，窗外的夕阳渐渐落下。画布上的海浪仿佛真的在流动。",
       "Background": "bg_art_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "calm" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "serious" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "calm"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "serious"
+        }
       ],
       "Next": "just_watch_02"
     },
     "just_watch_02": {
       "Id": "just_watch_02",
       "Type": "Dialogue",
-      "Speaker": "\u9648\u4f1f",
-      "Text": "\u2026\u2026\u8c22\u8c22\u4f60\u966a\u6211\u3002\u5f88\u4e45\u6ca1\u6709\u4eba\u8fd9\u6837\u9759\u9759\u5730\u770b\u6211\u753b\u753b\u4e86\u3002",
+      "Speaker": "陈伟",
+      "Text": "……谢谢你陪我。很久没有人这样静静地看我画画了。",
       "Background": "bg_art_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": "ending_art"
     },
     "go_home_01": {
       "Id": "go_home_01",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u8fd8\u662f\u5148\u56de\u5bb6\u5427\uff0c\u660e\u5929\u518d\u8bf4\u3002",
+      "Speaker": "主角",
+      "Text": "还是先回家吧，明天再说。",
       "Background": "bg_seaside_sunset",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "calm" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
       ],
       "Next": "go_home_02"
     },
@@ -1428,7 +2248,7 @@
       "Id": "go_home_02",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u6cbf\u7740\u6d77\u8fb9\u7684\u5c0f\u8def\u5f80\u56de\u8d70\uff0c\u5915\u9633\u628a\u6574\u4e2a\u5929\u7a7a\u67d3\u6210\u4e86\u6a58\u7ea2\u8272\u3002\u6d77\u9762\u4e0a\u6620\u7740\u665a\u971e\uff0c\u7f8e\u5f97\u8ba9\u4eba\u5fd8\u8bb0\u4e86\u65f6\u95f4\u3002",
+      "Text": "沿着海边的小路往回走，夕阳把整个天空染成了橘红色。海面上映着晚霞，美得让人忘记了时间。",
       "Background": "bg_seaside_sunset",
       "Characters": [],
       "Next": "go_home_03"
@@ -1436,11 +2256,15 @@
     "go_home_03": {
       "Id": "go_home_03",
       "Type": "Dialogue",
-      "Speaker": "\u4e3b\u89d2",
-      "Text": "\u7b2c\u4e00\u5929\u5c31\u8fd9\u6837\u7ed3\u675f\u4e86\u3002\u867d\u7136\u5f88\u5e73\u51e1\uff0c\u4f46\u660e\u5929\u4e00\u5b9a\u4f1a\u66f4\u597d\u7684\u3002",
+      "Speaker": "主角",
+      "Text": "第一天就这样结束了。虽然很平凡，但明天一定会更好的。",
       "Background": "bg_seaside_sunset",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
       ],
       "Next": "ending_quiet"
     },
@@ -1448,10 +2272,14 @@
       "Id": "ending_friendship",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u65b0\u7684\u751f\u6d3b\uff0c\u4ece\u8fd9\u6bb5\u53cb\u8c0a\u5f00\u59cb\u3002\u867d\u7136\u6709\u4e9b\u4e0d\u4e60\u60ef\uff0c\u4f46\u4e5f\u8bb8\u8fd9\u91cc\u4f1a\u6709\u610f\u60f3\u4e0d\u5230\u7684\u9082\u9005\u2026\u2026",
+      "Text": "新的生活，从这段友谊开始。虽然有些不习惯，但也许这里会有意想不到的邂逅……",
       "Background": "bg_classroom",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
       ],
       "Next": ""
     },
@@ -1459,11 +2287,19 @@
       "Id": "ending_student_council",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u5929\u53f0\u4e0a\u7684\u76f8\u9047\uff0c\u4e5f\u8bb8\u662f\u4e00\u4e2a\u65b0\u7684\u5f00\u59cb\u3002\u5728\u8fd9\u4e2a\u5b66\u751f\u4f1a\u4e3b\u5e2d\u7684\u5e2e\u52a9\u4e0b\uff0c\u6821\u56ed\u751f\u6d3b\u4f1a\u53d8\u5f97\u600e\u6837\u5462\u2026\u2026",
+      "Text": "天台上的相遇，也许是一个新的开始。在这个学生会主席的帮助下，校园生活会变得怎样呢……",
       "Background": "bg_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": ""
     },
@@ -1471,11 +2307,19 @@
       "Id": "ending_music",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u97f3\u4e50\u6559\u5ba4\u91cc\u7684\u5076\u7136\u76f8\u9047\uff0c\u4e5f\u8bb8\u662f\u547d\u8fd0\u7684\u5b89\u6392\u3002\u5728\u8fd9\u4e2a\u5b89\u9759\u7684\u89d2\u843d\uff0c\u4e00\u6bb5\u65cb\u5f8b\u6084\u7136\u5f00\u59cb\u2026\u2026",
+      "Text": "音乐教室里的偶然相遇，也许是命运的安排。在这个安静的角落，一段旋律悄然开始……",
       "Background": "bg_music_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "xia_yin", "Position": "Right", "Expression": "calm" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
       ],
       "Next": ""
     },
@@ -1483,11 +2327,19 @@
       "Id": "ending_sports",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u7bee\u7403\u573a\u4e0a\u7684\u6c57\u6c34\u4e0e\u6b22\u7b11\uff0c\u662f\u9752\u6625\u6700\u7f8e\u597d\u7684\u56de\u5fc6\u3002\u5728\u8fd9\u4e2a\u5145\u6ee1\u6d3b\u529b\u7684\u6821\u56ed\u91cc\uff0c\u53cb\u8c0a\u7684\u79cd\u5b50\u6084\u7136\u840c\u82bd\u2026\u2026",
+      "Text": "篮球场上的汗水与欢笑，是青春最美好的回忆。在这个充满活力的校园里，友谊的种子悄然萌芽……",
       "Background": "bg_basketball_court",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "zhang_hao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": ""
     },
@@ -1495,11 +2347,19 @@
       "Id": "ending_festival",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u6587\u5316\u8282\u7684\u7b79\u5907\u5de5\u4f5c\u6b63\u5f0f\u5f00\u59cb\u3002\u5728\u8fd9\u4e2a\u5145\u6ee1\u671f\u5f85\u7684\u65c5\u7a0b\u4e2d\uff0c\u4e00\u5207\u624d\u521a\u521a\u5f00\u59cb\u2026\u2026",
+      "Text": "文化节的筹备工作正式开始。在这个充满期待的旅程中，一切才刚刚开始……",
       "Background": "bg_student_council",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "determined" },
-        { "Id": "su_yao", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "determined"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": ""
     },
@@ -1507,11 +2367,19 @@
       "Id": "ending_sakura",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u6a31\u82b1\u6811\u4e0b\u7684\u7ea6\u5b9a\uff0c\u662f\u4e00\u5207\u7684\u5f00\u59cb\u3002\u5915\u9633\u4e0b\u7684\u6a31\u82b1\u6811\u89c1\u8bc1\u4e86\u8fd9\u4e2a\u627f\u8bfa\uff0c\u800c\u660e\u5929\u7684\u65e5\u51fa\u5c06\u5e26\u6765\u5168\u65b0\u7684\u5e0c\u671b\u2026\u2026",
+      "Text": "樱花树下的约定，是一切的开始。夕阳下的樱花树见证了这个承诺，而明天的日出将带来全新的希望……",
       "Background": "bg_sunset_rooftop",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "lin_yue", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": ""
     },
@@ -1519,10 +2387,14 @@
       "Id": "ending_art_music",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u97f3\u4e50\u4e0e\u7ed8\u753b\u7684\u4ea4\u7ec7\uff0c\u662f\u8fd9\u6240\u5b66\u6821\u6700\u7f8e\u7684\u548c\u58f0\u3002\u4e5f\u8bb8\u5728\u8fd9\u91cc\uff0c\u4e0d\u540c\u7684\u4e16\u754c\u53ef\u4ee5\u76f8\u4e92\u7167\u4eae\u2026\u2026",
+      "Text": "音乐与绘画的交织，是这所学校最美的和声。也许在这里，不同的世界可以相互照亮……",
       "Background": "bg_art_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
       ],
       "Next": ""
     },
@@ -1530,11 +2402,19 @@
       "Id": "ending_art",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u5b89\u9759\u7684\u966a\u4f34\uff0c\u6709\u65f6\u6bd4\u5343\u8a00\u4e07\u8bed\u66f4\u6e29\u6696\u3002\u5728\u8fd9\u4e2a\u5145\u6ee1\u8272\u5f69\u7684\u623f\u95f4\u91cc\uff0c\u4e00\u6bb5\u65b0\u7684\u53cb\u8c0a\u6084\u7136\u8d77\u7b14\u2026\u2026",
+      "Text": "安静的陪伴，有时比千言万语更温暖。在这个充满色彩的房间里，一段新的友谊悄然起笔……",
       "Background": "bg_art_room",
       "Characters": [
-        { "Id": "protagonist", "Position": "Left", "Expression": "smile" },
-        { "Id": "chen_wei", "Position": "Right", "Expression": "smile" }
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
       ],
       "Next": ""
     },
@@ -1542,12 +2422,2926 @@
       "Id": "ending_quiet",
       "Type": "Dialogue",
       "Speaker": "",
-      "Text": "\u5e73\u51e1\u7684\u7b2c\u4e00\u5929\uff0c\u5374\u6709\u7740\u4e0d\u5e73\u51e1\u7684\u611f\u52a8\u3002\u6d77\u8fb9\u7684\u665a\u971e\u5c06\u8fd9\u4e00\u5207\u67d3\u6210\u91d1\u8272\uff0c\u800c\u660e\u5929\u7684\u6545\u4e8b\u8fd8\u5728\u7b49\u5f85\u7740\u88ab\u4e66\u5199\u2026\u2026",
+      "Text": "平凡的第一天，却有着不平凡的感动。海边的晚霞将这一切染成金色，而明天的故事还在等待着被书写……",
       "Background": "bg_seaside_sunset",
       "Characters": [
-        { "Id": "protagonist", "Position": "Center", "Expression": "calm" }
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
       ],
       "Next": ""
+    },
+    "rainy_day_01": {
+      "Id": "rainy_day_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "周末的清晨，窗外传来淅淅沥沥的雨声。灰色的云层低垂，整座城市笼罩在雨雾之中。",
+      "Background": "bg_rainy_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "rainy_day_02"
+    },
+    "rainy_day_02": {
+      "Id": "rainy_day_02",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "下雨了啊……本来打算今天出去转转的。",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Next": "rainy_day_03"
+    },
+    "rainy_day_03": {
+      "Id": "rainy_day_03",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "手机突然震动起来，是一条消息。",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "surprised"
+        }
+      ],
+      "Next": "rainy_day_04"
+    },
+    "rainy_day_04": {
+      "Id": "rainy_day_04",
+      "Type": "Dialogue",
+      "Speaker": "刘梅",
+      "Text": "早上好！今天下雨了，你还好吗？要不要一起去图书馆学习？",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "rainy_day_05"
+    },
+    "rainy_choice_01": {
+      "Id": "rainy_choice_01",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "收到刘梅的消息，你回复……",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "rain_accept",
+          "Text": "好啊，一起去图书馆吧",
+          "Next": "rain_accept_01"
+        },
+        {
+          "Id": "rain_stay_home",
+          "Text": "今天想在家休息",
+          "Next": "rain_stay_home_01"
+        }
+      ]
+    },
+    "rain_accept_01": {
+      "Id": "rain_accept_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "好啊，我们约个地方见面吧。",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "rain_accept_02"
+    },
+    "rain_accept_02": {
+      "Id": "rain_accept_02",
+      "Type": "Dialogue",
+      "Speaker": "刘梅",
+      "Text": "那我们在校门口的便利店见？我带伞了！",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "rain_accept_03"
+    },
+    "rain_accept_03": {
+      "Id": "rain_accept_03",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "撑起伞走入雨中，雨滴打在伞面上发出沙沙的声音。远处的街道被雨水洗刷得格外清晰。",
+      "Background": "bg_rainy_street",
+      "Characters": [],
+      "Next": "rain_accept_04"
+    },
+    "rain_accept_04": {
+      "Id": "rain_accept_04",
+      "Type": "Dialogue",
+      "Speaker": "刘梅",
+      "Text": "你来啦！我们一起走吧，路上小心别滑倒了。",
+      "Background": "bg_rainy_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "rain_accept_05"
+    },
+    "rain_accept_05": {
+      "Id": "rain_accept_05",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "两人在雨中并肩而行，脚步声在空旷的街道上有节奏地回响。",
+      "Background": "bg_rainy_street",
+      "Characters": [],
+      "Next": "library_02"
+    },
+    "rain_stay_home_01": {
+      "Id": "rain_stay_home_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "谢谢你的邀请，今天我想在家休息一下。下次吧！",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "rain_stay_home_02"
+    },
+    "rain_stay_home_02": {
+      "Id": "rain_stay_home_02",
+      "Type": "Dialogue",
+      "Speaker": "刘梅",
+      "Text": "好的，好好休息！有什么需要随时找我哦。",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "rain_stay_home_03"
+    },
+    "rain_stay_home_03": {
+      "Id": "rain_stay_home_03",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "窗外的雨越下越大，泡一杯热茶，坐在窗边看着雨中的城市。远处隐约传来钢琴声。",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "music_reverie_01"
+    },
+    "music_reverie_01": {
+      "Id": "music_reverie_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "这是……上次在音乐教室听到的曲子吗？",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "surprised"
+        }
+      ],
+      "Next": "music_reverie_02"
+    },
+    "music_reverie_02": {
+      "Id": "music_reverie_02",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "闭上眼睛，让音乐带着思绪飘远。想起了很多以前的事——那个总是笑着的青梅竹马，还有……那个下雨天遇到的神秘女孩。",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Next": "choice_memory_01"
+    },
+    "choice_memory_01": {
+      "Id": "choice_memory_01",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "脑海中浮现出……",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "memory_childhood",
+          "Text": "回忆童年和青梅竹马的日子",
+          "Next": "memory_childhood_01"
+        },
+        {
+          "Id": "memory_mysterious",
+          "Text": "回忆公交车上那个神秘的女孩",
+          "Next": "memory_mysterious_01"
+        }
+      ]
+    },
+    "memory_childhood_01": {
+      "Id": "memory_childhood_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "那时候的我们，总是无忧无虑地奔跑在乡间的小路上……",
+      "Background": "bg_park_cherry",
+      "Characters": [
+        {
+          "Id": "childhood_friend",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "memory_childhood_02"
+    },
+    "memory_childhood_02": {
+      "Id": "memory_childhood_02",
+      "Type": "Dialogue",
+      "Speaker": "青梅竹马",
+      "Text": "别忘了我们的约定哦！长大后要一起去看大海！",
+      "Background": "bg_park_cherry",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "childhood_friend",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "memory_childhood_03"
+    },
+    "memory_childhood_03": {
+      "Id": "memory_childhood_03",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "记忆中的笑脸如此清晰。也许……她也在某个地方看着同一片天空吧。",
+      "Background": "bg_park_cherry",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "memory_childhood_04"
+    },
+    "memory_childhood_04": {
+      "Id": "memory_childhood_04",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "大海……不知道什么时候才能实现那个约定呢。",
+      "Background": "bg_park_cherry",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Next": "weekend_reflection_01"
+    },
+    "memory_mysterious_01": {
+      "Id": "memory_mysterious_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "那个女孩……她说她是学生会主席，但总觉得她身上有一种说不出的神秘感。",
+      "Background": "bg_bus",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Next": "memory_mysterious_02"
+    },
+    "memory_mysterious_02": {
+      "Id": "memory_mysterious_02",
+      "Type": "Dialogue",
+      "Speaker": "苏瑶",
+      "Text": "欢迎你来星海！今天报到后记得来学生会办公室找我哦。",
+      "Background": "bg_bus",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "memory_mysterious_03"
+    },
+    "memory_mysterious_03": {
+      "Id": "memory_mysterious_03",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "阳光照在她金色的头发上，闪闪发亮。那笑容像是能穿透一切阴霾。",
+      "Background": "bg_bus",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "weekend_reflection_01"
+    },
+    "weekend_reflection_01": {
+      "Id": "weekend_reflection_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "新的生活……比我想象中要精彩得多呢。也许这就是命运的安排吧。",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "weekend_end_01"
+    },
+    "weekend_end_01": {
+      "Id": "weekend_end_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "雨渐渐停了，阳光从云层中透出，一道彩虹横跨天际。新的故事，正在等待被书写。",
+      "Background": "bg_rainy_street",
+      "Characters": [],
+      "Next": "monday_01"
+    },
+    "monday_01": {
+      "Id": "monday_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "新的一周开始了。周一的校园里到处是忙碌的身影——文化节的筹备正在紧锣密鼓地进行。",
+      "Background": "bg_school_gate",
+      "Characters": [],
+      "Next": "monday_02"
+    },
+    "monday_02": {
+      "Id": "monday_02",
+      "Type": "Dialogue",
+      "Speaker": "张浩",
+      "Text": "喂！你来得正好！文化节我们篮球社要办一个篮球体验区，来帮忙吧！",
+      "Background": "bg_school_gate",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "monday_03"
+    },
+    "monday_03": {
+      "Id": "monday_03",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "还没等回答，另一边又传来了声音。",
+      "Background": "bg_school_gate",
+      "Characters": [],
+      "Next": "monday_04"
+    },
+    "monday_04": {
+      "Id": "monday_04",
+      "Type": "Dialogue",
+      "Speaker": "刘梅",
+      "Text": "等等！我们班还没确定文化节的节目呢。你有什么好主意吗？",
+      "Background": "bg_school_gate",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "choice_festival_help"
+    },
+    "choice_festival_help": {
+      "Id": "choice_festival_help",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "文化节你要帮哪边？",
+      "Background": "bg_school_gate",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "help_basketball",
+          "Text": "帮张浩准备篮球体验区",
+          "Next": "help_basketball_01"
+        },
+        {
+          "Id": "help_class",
+          "Text": "帮刘梅策划班级节目",
+          "Next": "help_class_01"
+        },
+        {
+          "Id": "help_both",
+          "Text": "两边都帮",
+          "Next": "help_both_01"
+        }
+      ]
+    },
+    "help_basketball_01": {
+      "Id": "help_basketball_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "好吧，篮球体验区听起来挺有意思的。",
+      "Background": "bg_gymnasium",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "help_basketball_02"
+    },
+    "help_basketball_02": {
+      "Id": "help_basketball_02",
+      "Type": "Dialogue",
+      "Speaker": "张浩",
+      "Text": "太好了！我们设计了三分球挑战、投篮比赛，还有……嘿嘿，你来了就知道了！",
+      "Background": "bg_gymnasium",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "help_basketball_03"
+    },
+    "help_basketball_03": {
+      "Id": "help_basketball_03",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "篮球馆里热火朝天地忙碌着。汗水和欢笑交织在一起，这就是青春的样子吧。",
+      "Background": "bg_gymnasium",
+      "Characters": [],
+      "Next": "festival_prep_done"
+    },
+    "help_class_01": {
+      "Id": "help_class_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "班级节目啊……让我想想，话剧怎么样？",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "thinking"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "help_class_02"
+    },
+    "help_class_02": {
+      "Id": "help_class_02",
+      "Type": "Dialogue",
+      "Speaker": "刘梅",
+      "Text": "话剧？这个主意不错！你来写剧本吗？",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "help_class_03"
+    },
+    "help_class_03": {
+      "Id": "help_class_03",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "我可以试试。不过需要大家一起来排练。",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "determined"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "help_class_04"
+    },
+    "help_class_04": {
+      "Id": "help_class_04",
+      "Type": "Dialogue",
+      "Speaker": "林月",
+      "Text": "我也想参加！我可以负责道具和布景！",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Center",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "help_class_05"
+    },
+    "help_class_05": {
+      "Id": "help_class_05",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "大家的热情感染了你。看来这将是一个难忘的文化节呢。",
+      "Background": "bg_classroom",
+      "Characters": [],
+      "Next": "festival_prep_done"
+    },
+    "help_both_01": {
+      "Id": "help_both_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "两边都想帮忙，但时间可能不太够……",
+      "Background": "bg_school_gate",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Next": "help_both_02"
+    },
+    "help_both_02": {
+      "Id": "help_both_02",
+      "Type": "Dialogue",
+      "Speaker": "张浩",
+      "Text": "没事！你上午来帮我们布置场地，下午去帮忙策划节目就行！",
+      "Background": "bg_school_gate",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "help_both_03"
+    },
+    "help_both_03": {
+      "Id": "help_both_03",
+      "Type": "Dialogue",
+      "Speaker": "刘梅",
+      "Text": "没错！大家一起努力，一定没问题的！",
+      "Background": "bg_school_gate",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "smile"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Left",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "help_both_04"
+    },
+    "help_both_04": {
+      "Id": "help_both_04",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "忙碌但充实的一天。虽然累得筋疲力尽，但看着逐渐成型的活动场地和节目方案，心里充满了成就感。",
+      "Background": "bg_school_festival",
+      "Characters": [],
+      "Next": "festival_prep_done"
+    },
+    "festival_prep_done": {
+      "Id": "festival_prep_done",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "几天后……文化节的准备工作接近完成。校园里到处是彩旗和海报，空气中弥漫着期待的气息。",
+      "Background": "bg_school_festival",
+      "Characters": [],
+      "Next": "choice_festival_day"
+    },
+    "choice_festival_day": {
+      "Id": "choice_festival_day",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "文化节当天，你首先去……",
+      "Background": "bg_school_festival",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "fest_stage",
+          "Text": "去舞台区看表演",
+          "Next": "fest_stage_01"
+        },
+        {
+          "Id": "fest_booth",
+          "Text": "去各个社团摊位逛逛",
+          "Next": "fest_booth_01"
+        },
+        {
+          "Id": "fest_music",
+          "Text": "去音乐教室找夏音",
+          "Next": "fest_music_01"
+        },
+        {
+          "Id": "fest_art",
+          "Text": "去美术社的展览",
+          "Next": "fest_art_01"
+        }
+      ]
+    },
+    "fest_stage_01": {
+      "Id": "fest_stage_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "舞台上灯光闪烁，各班的节目轮番上演。欢笑声和掌声此起彼伏。",
+      "Background": "bg_school_festival",
+      "Characters": [],
+      "Next": "fest_stage_02"
+    },
+    "fest_stage_02": {
+      "Id": "fest_stage_02",
+      "Type": "Dialogue",
+      "Speaker": "苏瑶",
+      "Text": "文化节的氛围真不错呢！这些都是大家努力的成果。",
+      "Background": "bg_school_festival",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "fest_stage_03"
+    },
+    "fest_stage_03": {
+      "Id": "fest_stage_03",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "是啊，每个人都出了很多力。这将成为最珍贵的回忆。",
+      "Background": "bg_school_festival",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "fest_finale_01"
+    },
+    "fest_booth_01": {
+      "Id": "fest_booth_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "社团摊位前人头攒动。篮球社的体验区排起了长队，美术社的画作展吸引了很多人驻足。",
+      "Background": "bg_school_festival",
+      "Characters": [],
+      "Next": "fest_booth_02"
+    },
+    "fest_booth_02": {
+      "Id": "fest_booth_02",
+      "Type": "Dialogue",
+      "Speaker": "陈伟",
+      "Text": "……你来了。来看看我的画吧。",
+      "Background": "bg_school_festival",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "fest_booth_03"
+    },
+    "fest_booth_03": {
+      "Id": "fest_booth_03",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "这幅画……比上次在美术室看到的更完整了。这就是海的声音吗？",
+      "Background": "bg_school_festival",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "fest_booth_04"
+    },
+    "fest_booth_04": {
+      "Id": "fest_booth_04",
+      "Type": "Dialogue",
+      "Speaker": "陈伟",
+      "Text": "多亏了你介绍的音乐灵感……我好像找到了。",
+      "Background": "bg_school_festival",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "fest_finale_01"
+    },
+    "fest_music_01": {
+      "Id": "fest_music_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "音乐教室里传出悠扬的钢琴声。夏音独自坐在钢琴前，指尖在琴键上跳动。",
+      "Background": "bg_music_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "fest_music_02"
+    },
+    "fest_music_02": {
+      "Id": "fest_music_02",
+      "Type": "Dialogue",
+      "Speaker": "夏音",
+      "Text": "……你来了。这首曲子，我想弹给你听。",
+      "Background": "bg_music_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "fest_music_03"
+    },
+    "fest_music_03": {
+      "Id": "fest_music_03",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "旋律如水般流淌。音符中似乎包含了所有无法用语言表达的情感。",
+      "Background": "bg_music_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "calm"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "fest_music_04"
+    },
+    "fest_music_04": {
+      "Id": "fest_music_04",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "真好听……这首曲子叫什么名字？",
+      "Background": "bg_music_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "fest_music_05"
+    },
+    "fest_music_05": {
+      "Id": "fest_music_05",
+      "Type": "Dialogue",
+      "Speaker": "夏音",
+      "Text": "……叫《晨曦》。是我遇到你的那天写的。",
+      "Background": "bg_music_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "fest_finale_01"
+    },
+    "fest_art_01": {
+      "Id": "fest_art_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "美术社的展览在走廊上展开。一幅幅画作讲述着不同的故事。",
+      "Background": "bg_school_corridor",
+      "Characters": [],
+      "Next": "fest_art_02"
+    },
+    "fest_art_02": {
+      "Id": "fest_art_02",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "这幅画……是在天台看到的夕阳吗？画得真好。",
+      "Background": "bg_school_corridor",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "fest_art_03"
+    },
+    "fest_art_03": {
+      "Id": "fest_art_03",
+      "Type": "Dialogue",
+      "Speaker": "陈伟",
+      "Text": "那是……樱花树下的约定。我想象中的画面。",
+      "Background": "bg_school_corridor",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "fest_art_04"
+    },
+    "fest_art_04": {
+      "Id": "fest_art_04",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "樱花树下的约定……是啊，那天的夕阳真的很美。",
+      "Background": "bg_school_corridor",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "calm"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "fest_finale_01"
+    },
+    "fest_finale_01": {
+      "Id": "fest_finale_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "文化节的最后一个环节是焰火表演。所有人聚集在天台上，仰望着夜空中绽放的焰火。",
+      "Background": "bg_night_sky",
+      "Characters": [],
+      "Next": "fest_finale_02"
+    },
+    "fest_finale_02": {
+      "Id": "fest_finale_02",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "真美啊……这也许是我度过的最美好的时光。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "choice_festival_who"
+    },
+    "choice_festival_who": {
+      "Id": "choice_festival_who",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "焰火下，你想和谁一起看？",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "fest_with_lin",
+          "Text": "和林月一起",
+          "Next": "fest_with_lin_01"
+        },
+        {
+          "Id": "fest_with_su",
+          "Text": "和苏瑶一起",
+          "Next": "fest_with_su_01"
+        },
+        {
+          "Id": "fest_with_xia",
+          "Text": "和夏音一起",
+          "Next": "fest_with_xia_01"
+        },
+        {
+          "Id": "fest_alone",
+          "Text": "独自一人静静欣赏",
+          "Next": "fest_alone_01"
+        }
+      ]
+    },
+    "fest_with_lin_01": {
+      "Id": "fest_with_lin_01",
+      "Type": "Dialogue",
+      "Speaker": "林月",
+      "Text": "你说……这棵樱花树下的传说是真的吗？在焰火下许的愿望会实现。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "fest_with_lin_02"
+    },
+    "fest_with_lin_02": {
+      "Id": "fest_with_lin_02",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "也许吧。但不管是不是真的，这一刻已经足够珍贵了。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "ending_festival_lin"
+    },
+    "fest_with_su_01": {
+      "Id": "fest_with_su_01",
+      "Type": "Dialogue",
+      "Speaker": "苏瑶",
+      "Text": "你知道吗，每次看到焰火，我都会想起第一次在公交车上遇到你的情景。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "fest_with_su_02"
+    },
+    "fest_with_su_02": {
+      "Id": "fest_with_su_02",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "那时候的你，头发被阳光照得闪闪发亮。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "fest_with_su_03"
+    },
+    "fest_with_su_03": {
+      "Id": "fest_with_su_03",
+      "Type": "Dialogue",
+      "Speaker": "苏瑶",
+      "Text": "谢谢你。谢谢你让这个故事有了美好的开始。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "ending_festival_su"
+    },
+    "fest_with_xia_01": {
+      "Id": "fest_with_xia_01",
+      "Type": "Dialogue",
+      "Speaker": "夏音",
+      "Text": "……音乐、焰火、星空。它们都是相通的，都是表达情感的方式。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "fest_with_xia_02"
+    },
+    "fest_with_xia_02": {
+      "Id": "fest_with_xia_02",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "那你的音乐想表达什么呢？",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "curious"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "thinking"
+        }
+      ],
+      "Next": "fest_with_xia_03"
+    },
+    "fest_with_xia_03": {
+      "Id": "fest_with_xia_03",
+      "Type": "Dialogue",
+      "Speaker": "夏音",
+      "Text": "……希望。还有……感谢。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "ending_festival_xia"
+    },
+    "fest_alone_01": {
+      "Id": "fest_alone_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "焰火在夜空中绽放，照亮了整片天空。一个人安静地欣赏，也是一种幸福。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "ending_festival_alone"
+    },
+    "beach_intro_01": {
+      "Id": "beach_intro_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "暑假前夕，大家商量着一起去海边玩。",
+      "Background": "bg_classroom",
+      "Characters": [],
+      "Next": "beach_intro_02"
+    },
+    "beach_intro_02": {
+      "Id": "beach_intro_02",
+      "Type": "Dialogue",
+      "Speaker": "苏瑶",
+      "Text": "我们去海边吧！听说最近的海滩很美。",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "su_yao",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "beach_intro_03"
+    },
+    "beach_intro_03": {
+      "Id": "beach_intro_03",
+      "Type": "Dialogue",
+      "Speaker": "张浩",
+      "Text": "好啊！还可以打沙滩排球！",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "su_yao",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "beach_intro_04"
+    },
+    "beach_intro_04": {
+      "Id": "beach_intro_04",
+      "Type": "Dialogue",
+      "Speaker": "林月",
+      "Text": "那我也要去！可以一起捡贝壳！",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "su_yao",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Center",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "beach_intro_05"
+    },
+    "beach_intro_05": {
+      "Id": "beach_intro_05",
+      "Type": "Dialogue",
+      "Speaker": "刘梅",
+      "Text": "大家一起去的话，我来准备便当吧！",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "su_yao",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "CenterLeft",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "CenterRight",
+          "Expression": "smile"
+        },
+        {
+          "Id": "liu_mei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "beach_intro_06"
+    },
+    "beach_intro_06": {
+      "Id": "beach_intro_06",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "小时候的那个约定……终于可以实现吗？",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Next": "beach_trip_01"
+    },
+    "beach_trip_01": {
+      "Id": "beach_trip_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "经过一个多小时的车程，终于来到了海边。蔚蓝的大海一望无际，海风带来咸咸的气息。",
+      "Background": "bg_beach",
+      "Characters": [],
+      "Next": "beach_trip_02"
+    },
+    "beach_trip_02": {
+      "Id": "beach_trip_02",
+      "Type": "Dialogue",
+      "Speaker": "张浩",
+      "Text": "哇！大海！太棒了！来来来，先打一场沙滩排球！",
+      "Background": "bg_beach",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "choice_beach_activity"
+    },
+    "choice_beach_activity": {
+      "Id": "choice_beach_activity",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "在海边你想……",
+      "Background": "bg_beach",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "beach_volleyball",
+          "Text": "和张浩打沙滩排球",
+          "Next": "beach_volleyball_01"
+        },
+        {
+          "Id": "beach_shells",
+          "Text": "和林月一起捡贝壳",
+          "Next": "beach_shells_01"
+        },
+        {
+          "Id": "beach_swim",
+          "Text": "去游泳",
+          "Next": "beach_swim_01"
+        }
+      ]
+    },
+    "beach_volleyball_01": {
+      "Id": "beach_volleyball_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "来吧！我不会输的！",
+      "Background": "bg_beach",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "determined"
+        },
+        {
+          "Id": "zhang_hao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "beach_volleyball_02"
+    },
+    "beach_volleyball_02": {
+      "Id": "beach_volleyball_02",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "沙滩上充满了欢声笑语。汗水和海水混在一起，阳光把一切都照得金灿灿的。",
+      "Background": "bg_beach",
+      "Characters": [],
+      "Next": "beach_sunset_01"
+    },
+    "beach_shells_01": {
+      "Id": "beach_shells_01",
+      "Type": "Dialogue",
+      "Speaker": "林月",
+      "Text": "你看这个贝壳！好漂亮！",
+      "Background": "bg_beach",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "beach_shells_02"
+    },
+    "beach_shells_02": {
+      "Id": "beach_shells_02",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "嗯，这个形状很像星星呢。",
+      "Background": "bg_beach",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "beach_shells_03"
+    },
+    "beach_shells_03": {
+      "Id": "beach_shells_03",
+      "Type": "Dialogue",
+      "Speaker": "林月",
+      "Text": "我要把它做成项链，当作纪念。",
+      "Background": "bg_beach",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "beach_sunset_01"
+    },
+    "beach_swim_01": {
+      "Id": "beach_swim_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "好凉！不过这感觉真棒！",
+      "Background": "bg_beach",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "beach_swim_02"
+    },
+    "beach_swim_02": {
+      "Id": "beach_swim_02",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "海浪一波波打来，在浮沉之间仿佛所有的烦恼都被海水冲走了。",
+      "Background": "bg_beach",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "beach_sunset_01"
+    },
+    "beach_sunset_01": {
+      "Id": "beach_sunset_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "傍晚时分，夕阳将海面染成了橘红色。大家都安静了下来，一起看着落日。",
+      "Background": "bg_seaside_sunset",
+      "Characters": [],
+      "Next": "beach_sunset_02"
+    },
+    "beach_sunset_02": {
+      "Id": "beach_sunset_02",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "大海……终于实现了小时候的约定。",
+      "Background": "bg_seaside_sunset",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "beach_sunset_03"
+    },
+    "beach_sunset_03": {
+      "Id": "beach_sunset_03",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "也许这就是青春最美好的样子吧——和重要的人一起，看最美的风景。",
+      "Background": "bg_seaside_sunset",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "ending_beach"
+    },
+    "teacher_intro_01": {
+      "Id": "teacher_intro_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "新学期开始后，学校来了一位新的美术老师——陈老师。",
+      "Background": "bg_classroom",
+      "Characters": [],
+      "Next": "teacher_intro_02"
+    },
+    "teacher_intro_02": {
+      "Id": "teacher_intro_02",
+      "Type": "Dialogue",
+      "Speaker": "陈老师",
+      "Text": "大家好，我是陈老师。从今天起由我来负责美术课。希望大家能在这里找到属于自己的色彩。",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "teacher_chen",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "teacher_intro_03"
+    },
+    "teacher_intro_03": {
+      "Id": "teacher_intro_03",
+      "Type": "Dialogue",
+      "Speaker": "陈伟",
+      "Text": "……陈老师。",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "teacher_chen",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "surprised"
+        }
+      ],
+      "Next": "teacher_intro_04"
+    },
+    "teacher_intro_04": {
+      "Id": "teacher_intro_04",
+      "Type": "Dialogue",
+      "Speaker": "陈老师",
+      "Text": "陈伟同学？看来我们有缘分呢。听说你的画已经很不错了，让我看看你的作品吧。",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "teacher_chen",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "teacher_class_01"
+    },
+    "teacher_class_01": {
+      "Id": "teacher_class_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "陈老师在教室里巡视，走到你身边的时候停了下来。",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "teacher_chen",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "teacher_choice_01"
+    },
+    "choice_teacher": {
+      "Id": "choice_teacher",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "陈老师问你对美术的看法，你回答……",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "teacher_art_love",
+          "Text": "我觉得美术是一种表达方式",
+          "Next": "teacher_art_love_01"
+        },
+        {
+          "Id": "teacher_art_fun",
+          "Text": "我觉得画画很有趣",
+          "Next": "teacher_art_fun_01"
+        }
+      ]
+    },
+    "teacher_art_love_01": {
+      "Id": "teacher_art_love_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "我觉得美术是一种表达方式。有些话说不出来，但可以通过画笔传达。",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "calm"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "teacher_art_love_02"
+    },
+    "teacher_art_love_02": {
+      "Id": "teacher_art_love_02",
+      "Type": "Dialogue",
+      "Speaker": "陈老师",
+      "Text": "说得好。你能有这样的想法，说明你有艺术的天赋。有兴趣参加美术比赛吗？",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "teacher_art_love_03"
+    },
+    "teacher_art_love_03": {
+      "Id": "teacher_art_love_03",
+      "Type": "Dialogue",
+      "Speaker": "陈伟",
+      "Text": "……我也觉得他/她可以试试。",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Center",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "teacher_competition_01"
+    },
+    "teacher_art_fun_01": {
+      "Id": "teacher_art_fun_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "我觉得画画很有趣！可以画出想象不到的世界。",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "teacher_art_fun_02"
+    },
+    "teacher_art_fun_02": {
+      "Id": "teacher_art_fun_02",
+      "Type": "Dialogue",
+      "Speaker": "陈老师",
+      "Text": "保持这份热情很重要。有兴趣挑战一下自己吗？比如参加美术比赛。",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "teacher_competition_01"
+    },
+    "teacher_competition_01": {
+      "Id": "teacher_competition_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "美术比赛的主题是《羁绊》。你开始构思自己的作品。",
+      "Background": "bg_art_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Next": "teacher_choice_work"
+    },
+    "teacher_choice_work": {
+      "Id": "teacher_choice_work",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "你想画什么主题？",
+      "Background": "bg_art_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "work_friends",
+          "Text": "画和朋友们的羁绊",
+          "Next": "work_friends_01"
+        },
+        {
+          "Id": "work_sea",
+          "Text": "画大海和童年的约定",
+          "Next": "work_sea_01"
+        },
+        {
+          "Id": "work_music",
+          "Text": "画音乐和画的交融",
+          "Next": "work_music_01"
+        }
+      ]
+    },
+    "work_friends_01": {
+      "Id": "work_friends_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "我想画大家一起度过的那些日子——校园里的欢笑、雨天里的并肩、焰火下的约定……",
+      "Background": "bg_art_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "determined"
+        }
+      ],
+      "Next": "work_friends_02"
+    },
+    "work_friends_02": {
+      "Id": "work_friends_02",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "画笔在纸上起舞。色彩一点一点地汇聚成那些珍贵的记忆。",
+      "Background": "bg_art_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "art_result_01"
+    },
+    "work_sea_01": {
+      "Id": "work_sea_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "我想画那个约定——两个孩子在海边许下的约定。",
+      "Background": "bg_art_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "determined"
+        }
+      ],
+      "Next": "work_sea_02"
+    },
+    "work_sea_02": {
+      "Id": "work_sea_02",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "蔚蓝的大海，金色的沙滩，两个孩子手牵手……画笔把记忆变成了永恒。",
+      "Background": "bg_art_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "art_result_01"
+    },
+    "work_music_01": {
+      "Id": "work_music_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "我想画音乐和画的交融——夏音的琴声，陈伟的画笔……它们之间一定有某种联系。",
+      "Background": "bg_art_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "determined"
+        }
+      ],
+      "Next": "work_music_02"
+    },
+    "work_music_02": {
+      "Id": "work_music_02",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "音符化作色彩，旋律变成线条。在画布上，两种艺术形式完美地交织在一起。",
+      "Background": "bg_art_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "art_result_01"
+    },
+    "art_result_01": {
+      "Id": "art_result_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "比赛结果公布的这天，所有人都紧张地等待着。",
+      "Background": "bg_school_gate",
+      "Characters": [],
+      "Next": "art_result_02"
+    },
+    "art_result_02": {
+      "Id": "art_result_02",
+      "Type": "Dialogue",
+      "Speaker": "陈老师",
+      "Text": "恭喜你！你的作品获得了优秀奖！",
+      "Background": "bg_school_gate",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "art_result_03"
+    },
+    "art_result_03": {
+      "Id": "art_result_03",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "真的吗？！我简直不敢相信！",
+      "Background": "bg_school_gate",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "surprised"
+        }
+      ],
+      "Next": "art_result_04"
+    },
+    "art_result_04": {
+      "Id": "art_result_04",
+      "Type": "Dialogue",
+      "Speaker": "陈伟",
+      "Text": "……恭喜你。你的画真的很棒。",
+      "Background": "bg_school_gate",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "ending_art_contest"
+    },
+    "mysterious_intro_01": {
+      "Id": "mysterious_intro_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "一个雨后的傍晚，你独自走在回家的路上。",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "mysterious_intro_02"
+    },
+    "mysterious_intro_02": {
+      "Id": "mysterious_intro_02",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "转过一个街角，在路边的一棵老槐树下，看到了一个熟悉的身影。",
+      "Background": "bg_city_street",
+      "Characters": [],
+      "Next": "mysterious_intro_03"
+    },
+    "mysterious_intro_03": {
+      "Id": "mysterious_intro_03",
+      "Type": "Dialogue",
+      "Speaker": "神秘女孩",
+      "Text": "终于等到你了。",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "mysterious_intro_04"
+    },
+    "mysterious_intro_04": {
+      "Id": "mysterious_intro_04",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "你是……？我们在哪里见过吗？",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "mysterious_intro_05"
+    },
+    "mysterious_intro_05": {
+      "Id": "mysterious_intro_05",
+      "Type": "Dialogue",
+      "Speaker": "神秘女孩",
+      "Text": "也许吧。不过没关系，你很快就会想起来的。",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "curious"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "mysterious_choice_01"
+    },
+    "choice_mysterious": {
+      "Id": "choice_mysterious",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "面对这个神秘的女孩，你……",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "thinking"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "ask_who",
+          "Text": "问她到底是谁",
+          "Next": "ask_who_01"
+        },
+        {
+          "Id": "listen_her",
+          "Text": "先听听她说什么",
+          "Next": "listen_her_01"
+        }
+      ]
+    },
+    "ask_who_01": {
+      "Id": "ask_who_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "你到底是谁？为什么我会觉得你很熟悉？",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "serious"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "ask_who_02"
+    },
+    "ask_who_02": {
+      "Id": "ask_who_02",
+      "Type": "Dialogue",
+      "Speaker": "神秘女孩",
+      "Text": "我是……一个和你有约定的人。不过现在还不是告诉你的时候。",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "ask_who_03"
+    },
+    "ask_who_03": {
+      "Id": "ask_who_03",
+      "Type": "Dialogue",
+      "Speaker": "神秘女孩",
+      "Text": "等你想起来的时候，自然会知道。在那之前……请好好珍惜现在的生活。",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "curious"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "listen_her_02"
+    },
+    "listen_her_01": {
+      "Id": "listen_her_01",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "好吧……你想说什么？",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "calm"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "listen_her_02"
+    },
+    "listen_her_02": {
+      "Id": "listen_her_02",
+      "Type": "Dialogue",
+      "Speaker": "神秘女孩",
+      "Text": "我想告诉你……你正在走的这条路是对的。不要怀疑自己的选择。",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "listen_her_03"
+    },
+    "listen_her_03": {
+      "Id": "listen_her_03",
+      "Type": "Dialogue",
+      "Speaker": "神秘女孩",
+      "Text": "还有……那些羁绊，是真实存在的。不要辜负它们。",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "curious"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "mysterious_leave"
+    },
+    "mysterious_leave": {
+      "Id": "mysterious_leave",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "等等！你还会再出现吗？",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "mysterious_leave_02"
+    },
+    "mysterious_leave_02": {
+      "Id": "mysterious_leave_02",
+      "Type": "Dialogue",
+      "Speaker": "神秘女孩",
+      "Text": "会的。在合适的时候。",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "calm"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "mysterious_leave_03"
+    },
+    "mysterious_leave_03": {
+      "Id": "mysterious_leave_03",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "她转身走进了暮色中，只留下一串银铃般的笑声。那个背影……似乎在记忆的某个角落见过。",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Next": "mysterious_ending"
+    },
+    "mysterious_ending": {
+      "Id": "mysterious_ending",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "她是谁？和那个约定有什么关系？谜团越来越多，但生活依然在继续。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Next": "final_ending_choice"
+    },
+    "concert_intro_01": {
+      "Id": "concert_intro_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "夏音邀请你去听一场音乐会。",
+      "Background": "bg_music_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "concert_intro_02"
+    },
+    "concert_intro_02": {
+      "Id": "concert_intro_02",
+      "Type": "Dialogue",
+      "Speaker": "夏音",
+      "Text": "……下周六有一场音乐会，你要来吗？",
+      "Background": "bg_music_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "surprised"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "concert_intro_03"
+    },
+    "concert_intro_03": {
+      "Id": "concert_intro_03",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "音乐会？你也会去表演吗？",
+      "Background": "bg_music_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "curious"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "concert_intro_04"
+    },
+    "concert_intro_04": {
+      "Id": "concert_intro_04",
+      "Type": "Dialogue",
+      "Speaker": "夏音",
+      "Text": "……我会弹一首独奏。如果你愿意来的话。",
+      "Background": "bg_music_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "concert_intro_05"
+    },
+    "concert_intro_05": {
+      "Id": "concert_intro_05",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "当然去！我一定会来的！",
+      "Background": "bg_music_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "determined"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "concert_day_01"
+    },
+    "concert_day_01": {
+      "Id": "concert_day_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "音乐会当天。灯光柔和的大厅里坐满了人。舞台上的钢琴在灯光下闪闪发光。",
+      "Background": "bg_concert_hall",
+      "Characters": [],
+      "Next": "concert_day_02"
+    },
+    "concert_day_02": {
+      "Id": "concert_day_02",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "夏音走上舞台，在钢琴前坐下。她闭上眼睛，手指落下。",
+      "Background": "bg_concert_hall",
+      "Characters": [
+        {
+          "Id": "xia_yin",
+          "Position": "Center",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "concert_day_03"
+    },
+    "concert_day_03": {
+      "Id": "concert_day_03",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "音乐如水般流淌。整个大厅都被那旋律笼罩。每一个音符都像是一个故事，每一段旋律都像是一幅画。",
+      "Background": "bg_concert_hall",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "CenterLeft",
+          "Expression": "normal"
+        }
+      ],
+      "Next": "concert_day_04"
+    },
+    "concert_day_04": {
+      "Id": "concert_day_04",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "这就是……她的世界。用音乐表达的世界。",
+      "Background": "bg_concert_hall",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "concert_finale"
+    },
+    "concert_finale": {
+      "Id": "concert_finale",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "一曲终了，全场掌声雷动。夏音站起身，目光在人群中找到了你。她微微笑了一下。",
+      "Background": "bg_concert_hall",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "CenterRight",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "ending_concert"
+    },
+    "hospital_intro_01": {
+      "Id": "hospital_intro_01",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "听说陈老师生病了，住院了。你决定去看看她。",
+      "Background": "bg_school_gate",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "worried"
+        }
+      ],
+      "Next": "hospital_intro_02"
+    },
+    "hospital_intro_02": {
+      "Id": "hospital_intro_02",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "白色的走廊里弥漫着消毒水的气味。你找到了陈老师的病房。",
+      "Background": "bg_hospital",
+      "Characters": [],
+      "Next": "hospital_intro_03"
+    },
+    "hospital_intro_03": {
+      "Id": "hospital_intro_03",
+      "Type": "Dialogue",
+      "Speaker": "陈老师",
+      "Text": "啊，你来了。真没想到会有学生来看我。",
+      "Background": "bg_hospital",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "worried"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "hospital_intro_04"
+    },
+    "hospital_intro_04": {
+      "Id": "hospital_intro_04",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "陈老师，您还好吗？大家都很担心您。",
+      "Background": "bg_hospital",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "worried"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "hospital_intro_05"
+    },
+    "hospital_intro_05": {
+      "Id": "hospital_intro_05",
+      "Type": "Dialogue",
+      "Speaker": "陈老师",
+      "Text": "没事没事，只是小感冒而已。倒是你……最近画画的进度怎么样了？",
+      "Background": "bg_hospital",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "normal"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "hospital_chat"
+    },
+    "hospital_chat": {
+      "Id": "hospital_chat",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "在病房里聊了很久。陈老师讲了很多关于艺术和人生的故事，让你受益匪浅。",
+      "Background": "bg_hospital",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "calm"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "hospital_leave"
+    },
+    "hospital_leave": {
+      "Id": "hospital_leave",
+      "Type": "Dialogue",
+      "Speaker": "主角",
+      "Text": "陈老师，您好好休息。我们会等您回来的。",
+      "Background": "bg_hospital",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "hospital_end"
+    },
+    "hospital_end": {
+      "Id": "hospital_end",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "走出医院，阳光照在脸上。有时候，一个简单的探望，也能让人感受到很多温暖。",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": "final_ending_choice"
+    },
+    "ending_festival_lin": {
+      "Id": "ending_festival_lin",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "焰火下的约定，樱花树下的羁绊。这一切才刚刚开始，但已经足够温暖整个青春。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "lin_yue",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": ""
+    },
+    "ending_festival_su": {
+      "Id": "ending_festival_su",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "在焰火的照耀下，两颗心之间的距离又近了一步。也许这就是命运的安排。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "su_yao",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": ""
+    },
+    "ending_festival_xia": {
+      "Id": "ending_festival_xia",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "音乐与焰火的交响。在无声的世界里，她用音符诉说着最真挚的情感。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Next": ""
+    },
+    "ending_festival_alone": {
+      "Id": "ending_festival_alone",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "一个人的焰火，也是一种美丽。有时候，独处也是一种幸福。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "calm"
+        }
+      ],
+      "Next": ""
+    },
+    "ending_beach": {
+      "Id": "ending_beach",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "终于实现了童年的约定。蔚蓝的大海见证了所有的羁绊，也见证了一个新的开始。",
+      "Background": "bg_seaside_sunset",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": ""
+    },
+    "ending_art_contest": {
+      "Id": "ending_art_contest",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "画笔下的羁绊，是青春最美的表达。在色彩的世界里，每个人都找到了属于自己的那抹亮色。",
+      "Background": "bg_art_room",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "chen_wei",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": ""
+    },
+    "ending_concert": {
+      "Id": "ending_concert",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "琴声中包含了所有无法用语言表达的情感。在那一瞬间，音乐连接了两颗心。",
+      "Background": "bg_concert_hall",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "smile"
+        },
+        {
+          "Id": "xia_yin",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Next": ""
+    },
+    "final_ending_choice": {
+      "Id": "final_ending_choice",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "经历了这么多事，你觉得最重要的羁绊是……",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "final_friendship",
+          "Text": "和所有人的友情",
+          "Next": "ending_grand_friendship"
+        },
+        {
+          "Id": "final_hope",
+          "Text": "对未来的希望",
+          "Next": "ending_grand_hope"
+        },
+        {
+          "Id": "final_memory",
+          "Text": "所有珍贵的回忆",
+          "Next": "ending_grand_memory"
+        }
+      ]
+    },
+    "ending_grand_friendship": {
+      "Id": "ending_grand_friendship",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "新的学期开始了。在樱花树下，在音乐的教室里，在篮球场上，在每一个角落里——羁绊在继续，故事在继续。这所海边的学校，承载了太多美好的记忆。而这一切，才刚刚开始。",
+      "Background": "bg_school_gate",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": ""
+    },
+    "ending_grand_hope": {
+      "Id": "ending_grand_hope",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "夕阳西下，海风拂面。新的故事，新的羁绊，新的希望。在这所充满奇迹的学校里，每一天都是新的开始。",
+      "Background": "bg_seaside_sunset",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "determined"
+        }
+      ],
+      "Next": ""
+    },
+    "ending_grand_memory": {
+      "Id": "ending_grand_memory",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "当最后一朵焰火消失在夜空中，所有的记忆汇聚成了一幅画。那些欢笑、那些眼泪、那些约定——它们将永远被珍藏在心底，成为青春最美的注脚。",
+      "Background": "bg_night_sky",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": ""
+    },
+    "rainy_day_05": {
+      "Id": "rainy_day_05",
+      "Type": "Dialogue",
+      "Speaker": "",
+      "Text": "手机屏幕还亮着，刘梅的消息温暖了整个雨天。",
+      "Background": "bg_room_morning",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "smile"
+        }
+      ],
+      "Next": "rainy_choice_01"
+    },
+    "teacher_choice_01": {
+      "Id": "teacher_choice_01",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "陈老师问你对美术的看法，你回答……",
+      "Background": "bg_classroom",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Center",
+          "Expression": "thinking"
+        },
+        {
+          "Id": "teacher_chen",
+          "Position": "Right",
+          "Expression": "smile"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "teacher_art_love",
+          "Text": "我觉得美术是一种表达方式",
+          "Next": "teacher_art_love_01"
+        },
+        {
+          "Id": "teacher_art_fun",
+          "Text": "我觉得画画很有趣",
+          "Next": "teacher_art_fun_01"
+        }
+      ]
+    },
+    "mysterious_choice_01": {
+      "Id": "mysterious_choice_01",
+      "Type": "Choice",
+      "Speaker": "",
+      "Text": "面对这个神秘的女孩，你……",
+      "Background": "bg_city_street",
+      "Characters": [
+        {
+          "Id": "protagonist",
+          "Position": "Left",
+          "Expression": "thinking"
+        },
+        {
+          "Id": "mysterious_girl",
+          "Position": "Right",
+          "Expression": "calm"
+        }
+      ],
+      "Choices": [
+        {
+          "Id": "ask_who",
+          "Text": "问她到底是谁",
+          "Next": "ask_who_01"
+        },
+        {
+          "Id": "listen_her",
+          "Text": "先听听她说什么",
+          "Next": "listen_her_01"
+        }
+      ]
     }
   }
 }
