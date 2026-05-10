@@ -1,0 +1,21 @@
+# Unreal Engine generated files
+Intermediate/
+Binaries/
+Saved/
+DerivedDataCache/
+.vs/
+.vscode/
+*.suo
+*.sln
+
+# Build artifacts
+*.exe
+*.pdb
+*.obj
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# OS
+.DS_Store
